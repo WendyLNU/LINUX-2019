@@ -3,7 +3,6 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 import time                #引入相应库文件
-
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'}
 #加入请求头
 urls = ['https://www.qiushibaike.com/text/page/{}/'.format(str(num)) for num in range(1,36)]
@@ -68,3 +67,4 @@ if __name__ == '__main__':
             scrapper(url)
         end = time.time()
         print(name,end-start)
+        print("end")
