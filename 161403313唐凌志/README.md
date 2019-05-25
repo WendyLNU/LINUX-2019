@@ -32,3 +32,4 @@
 3. 上传大作业内容到自己的文件夹，包括（1）实验报告和（2）代码（创建code文件夹，用于存放代码）
 4. Pull new request提交作业
 
+wiki地址 ：https://github.com/BigBossForWin/LINUX-2019.wiki.git
