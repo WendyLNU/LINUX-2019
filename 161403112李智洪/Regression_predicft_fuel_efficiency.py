@@ -8,7 +8,7 @@ import seaborn as sns
 
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras import layers
+from keras import layers
 
 print(tf.__version__)
 
@@ -171,12 +171,13 @@ plt.axis('square')
 plt.xlim([0,plt.xlim()[1]])
 plt.ylim([0,plt.ylim()[1]])
 _ = plt.plot([-100, 100], [-100, 100])
-
+plt.show()
 #看错误分布
 error = test_predictions - test_labels
 plt.hist(error, bins = 25)
 plt.xlabel("Prediction Error [MPG]")
 _ = plt.ylabel("Count")
+plt.show()
 
 
 # 均方误差（MSE）是用于回归问题的常见损失函数（不同的损失函数用于分类问题）。
