@@ -1,1 +1,2 @@
-# Simple compiler for C(maybe) :)
+# Follow the tutorials of Tensorflow:)
+
