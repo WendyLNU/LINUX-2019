@@ -33,4 +33,4 @@
 4. Pull new request提交作业
 
 wiki地址 ：https://github.com/BigBossForWin/LINUX-2019.wiki.git
-![](https://github.com/BigBossForWin/LINUX-2019/raw/BigBossForWin-patch-1/xgboost.jpg)
+![](https://github.com/BigBossForWin/LINUX-2019/raw/BigBossForWin-patch-1/161403313唐凌志/xgboost.jpg)
