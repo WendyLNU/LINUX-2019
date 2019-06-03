@@ -76,7 +76,7 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
 #1.将训练数据馈送到模型中，在本示例中为 train_images 和 train_labels 数组。
 #2.模型学习将图像与标签相关联。
 #3.要求模型对测试集进行预测，在本示例中为 test_images 数组。验证预测结果是否与 test_labels 数组中的标签一致。
-#model.fit方法作用是让模型和训练数据进行你和   
+#model.fit方法作用是让模型和训练数据进行拟合   
 model.fit(train_images,train_labels,epochs=5)
 
 #评估准确率
@@ -98,7 +98,7 @@ def plot_image(i, predictions_array, true_label, img):
   plt.xticks([])
   plt.yticks([])
 
-  plt.imshow(img, cmap=plt.cm.binary)
+  plt.imshow(img, cmap=plt.cm.binary
 
   predicted_label = np.argmax(predictions_array)
   if predicted_label == true_label:
