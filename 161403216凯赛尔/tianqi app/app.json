@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff0000",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "凯撒app",
+    "navigationBarTextStyle": "black",
+    "backgroundColorTop": "#f4f4f4",
+    "navigationStyle": "default",
+    "backgroundColor": "#f4f4f4",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<
+view class='container'>
+  <view class='padb' style='font-size:20px; font-weight:bold;'>hello， ياخشىمۇ سىز </view>
+  <view class='padb' style='font-size:20px; font-weight:bold;'>欢迎查询天气预报</view>
+  <view class='padb' style='font-size:16px; font-weight:bold;'>{{weather.city}}实况天气预报</view>
+  <view>气象台 {{weather.update_time}} 更新</view>
+  <view class='padb'>{{weather.tem}}℃ {{weather.wea}}</view>
+  <view class='padb'>
+    <image mode="widthFix" src="http://cddn.huyahaha.com/tianqiapi/skin/qq/{{weather.wea_img}}.png" style="width:120rpx;" />
+  </view>
+  <view class='padb'>{{weather.win}} {{weather.win_speed}} {{weather.win_meter}}</view>
+  <view class='padb'> 湿度 : {{weather.humidity}}</view>
+  <view class='padb'> 能见度 : {{weather.visibility}}</view>
+  <view class='padb'> 气压 : {{weather.pressure}}hPa</view>
+  <view class='padb'>空气质量 {{weather.air_level}}</view>
+  <view class='padb'>{{weather.air_tips}}</view>
+  <view class='padb' style='font-size:16px; font-weight:bold;'>{{weather.city}}七日天气</view>
+  <block wx:for='{{weatherweek.data}}' wx:key='key_list'>
+    <view class='padb'>{{item.day}} - {{item.wea}} - {{item.win[0]}} - {{item.tem1}}/{{item.tem2}}</view>
+  </block>
+  <view class='padb' style='font-size:14px; color:#666;'>TianqiAPI.com</view>
+</view>
