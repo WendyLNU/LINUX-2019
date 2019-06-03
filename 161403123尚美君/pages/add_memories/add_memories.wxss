@@ -1,0 +1,91 @@
+.background-color {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.page-container {
+  padding: 30rpx;
+  padding-top:  10rpx;
+}
+
+
+
+.header{
+  height: 110rpx;
+  display:flex;
+  justify-content:space-around;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+textarea {
+  margin-left: -30rpx;
+  padding: 30rpx;
+  background: #FFF;
+  height: 70vh;
+  width: 690rpx;
+  font-size: 32rpx;
+}
+.header .item{
+  width: 120rpx;
+  height: 110rpx;
+}
+.header .img{
+  display: block;
+  margin: auto;
+  height: 64rpx;
+  width: 64rpx;
+}
+.header .info{
+  text-align: center;
+  color: #aaa;
+  font-size: 24rpx;
+}
+
+.version{
+  text-align: center;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  color: #bbb;
+}
+
+.text-right {
+  font-size: 24rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  padding: 10rpx;
+  background: #6cb8ff;
+  border-radius: 16rpx;
+  cursor: pointer;
+  margin-right: 4rpx;
+  margin-left: 4rpx;
+  color: #fff;
+}
+
+.target {
+  display: flex;
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.text-left {
+  font-size: 28rpx;
+  color: #bbb;
+}
+
+.library-name {
+  color: #8dcbff;
+  padding-bottom: 4rpx;
+  border-bottom: #8dcbff 3rpx solid;
+  margin-right: 4rpx;
+  margin-left: 4rpx;
+  font-size: 28rpx;
+  max-width: 300rpx;
+}

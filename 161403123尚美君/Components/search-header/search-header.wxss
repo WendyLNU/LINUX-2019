@@ -1,0 +1,33 @@
+/* Components/search_header.wxss */
+.index-header{
+  display: flex;
+  position: fixed;
+  z-index: 99999999;
+  top: 0px;
+  width: 100%;
+  height: 60rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background: #2fa0ff;
+}
+
+.header-search{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 75%;
+  height: 52rpx;
+  background: #ffffff;
+  border-radius: 30rpx;
+  padding: 4rpx 25% 0 40%;
+}
+
+.search-icon{
+  margin-left: -24rpx;
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.search-text{
+  display: none;
+}
+

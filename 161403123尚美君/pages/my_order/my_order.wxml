@@ -1,0 +1,51 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar bg-color">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class="list">
+            <view class='item' bindtap='checkHistory1' wx:for='{{list}}' id='{{item.id}}' wx:for-index="i" wx:key='id'>
+              <view class='item-icon'>
+                <image src='/img/icon/library-icon.png' mode='widthFix'></image>
+              </view>
+              <view class='item-text'>
+                <text>{{item.productName}}</text>
+                <text class="info">{{item.time}}</text>
+              </view>
+              <view class='item-button item-button-text'>
+                待审核
+              </view>
+            </view>
+            <view class="info">
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class="list">
+            <view class='item' bindtap='checkHistory2' wx:for='{{list2}}' id='{{item.id}}' wx:for-index="i" wx:key='id'>
+              <view class='item-icon'>
+                <image src='/img/icon/library-icon.png' mode='widthFix'></image>
+              </view>
+              <view class='item-text'>
+                <text>{{item.productName}}</text>
+                <text class="info">{{item.time}}</text>
+              </view>
+              <view class='item-button item-button-text'>
+              </view>
+            </view>
+            <view class="info">
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

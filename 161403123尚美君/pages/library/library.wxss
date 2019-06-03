@@ -1,0 +1,17 @@
+@import "/common/wxss/list.wxss";
+.library-plus-sign {
+  margin: 0 auto;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 0;
+  width: 120px;
+  height: 20px;
+  color: #ccc;
+  border-bottom: #ccc solid 1px;
+  background-color: transparent;
+  line-height: 30rpx;
+}

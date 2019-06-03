@@ -1,0 +1,59 @@
+<view class='background-color'>
+  <view class='page-container'>
+
+
+    <view class='header'>
+      <view class='text-left'>
+        当前记忆将存入：
+      </view>
+      <view class='library-name'>
+        {{saveTo.name}}
+      </view>
+      <view class='text-right' bindtap='chooseLib'>
+        更换记忆库
+      </view>
+    </view>
+
+    <view class="container">
+      <form bindsubmit='submit'>
+        <view class='memory-plus-sign' wx:if="{{memory.length==0}}" data-mi='{{0}}' bindtap='addMemory'>
+          添加记忆
+        </view>
+        <view wx:for="{{memory}}" wx:for-item="m" wx:for-index="mi" wx:key="mid">
+          <view class="memory memory{{mi}}">
+            <view data-mi='{{mi}}' class='remove-button' bindtap='removeMemory'>x</view>
+            <view class='page-title'>
+              <input class='title-input' cursor-spacing="80"  maxlength="-1" data-mi='{{mi}}' name="memoryTitlem{{mi}}" placeholder='在这里输入标题' value='{{m.title}}' bindinput='titleInput'></input>
+            </view>
+            <view class='hr'></view>
+            <view class='plus-sign' id="0" data-mi='{{mi}}' bindtap='addParagraph'>
+              添加段落
+            </view>
+            <view class='paragraph' wx:for="{{m.paragraph}}" wx:for-item="x" wx:for-index="pi" wx:key="pid">
+              <view class='{{x.isTitle?titleClass:contentClass}}  m{{mi}}p{{pi}}'>
+                <view id="{{pi}}" data-mi='{{mi}}' class='remove-button' bindtap='removeParagraph'>x</view>
+                <image id="{{pi}}" src='{{x.imgSrc}}' data-mi='{{mi}}' mode="aspectFit" hidden='{{x.isImg?false:true}}' bindtap='changeImg'></image>
+                <textarea maxlength="-1" id="{{pi}}" data-mi='{{mi}}' name="textaream{{mi}}p{{pi}}" cursor-spacing="120" class='' hidden='{{(x.isImg||x.isTitle)?true:false}}' value='{{x.content}}' bindinput='textInput' />
+                <input maxlength="20" cursor-spacing="80" data-mi='{{mi}}' name="titlem{{mi}}p{{pi}}" id="{{pi}}" hidden='{{x.isTitle?false:true}}' value='{{x.content}}' bindinput='textInput'></input>
+              </view>
+              <view class='plus-sign' id="{{pi+1}}" data-mi='{{mi}}' bindtap='addParagraph'>
+                添加段落
+              </view>
+            </view>
+
+          </view>
+          <view class='memory-plus-sign' data-mi='{{mi+1}}' bindtap='addMemory'>
+            添加记忆
+          </view>
+        </view>
+
+        
+        <view style='margin-top:40rpx;margin-bottom:400rpx;'>
+          <button style='margin-bottom:20rpx;font-size:32rpx;' form-type='submit'>提交</button>
+        </view>
+      </form>
+    </view>
+  </view>
+
+
+</view>

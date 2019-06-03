@@ -1,0 +1,101 @@
+<view class="page" style='background:#f5f5f5;padding-top:.77em'>
+
+  <view class="weui-cells__title" style='margin-top:0'>申请认证</view>
+  <view class="weui-cells weui-cells_after-title" style='font-size:32rpx;'>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">真实姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="真实姓名" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input weui-cell_vcode">
+      <view class="weui-cell__hd">
+        <view class="weui-label">从事职业</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="职业" />
+      </view>
+    </view>
+
+
+    <view class="weui-cell weui-cell_input weui-cell_vcode">
+      <view class="weui-cell__hd">
+        <view class="weui-label">身份证号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="身份证号" />
+      </view>
+    </view>
+
+
+
+
+
+
+  </view>
+
+
+
+  <view class="weui-cell" style='font-size:32rpx;'>
+    <view class="weui-cell__bd">
+      <view class="weui-uploader">
+        <view class="weui-uploader__hd">
+          <view class="weui-uploader__title">身份证照片</view>
+        </view>
+        <view class="weui-uploader__bd">
+          <view class="weui-uploader__files" id="uploaderFiles">
+            <block wx:for="{{files}}" wx:key="*this">
+              <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+              </view>
+            </block>
+            <view class="weui-uploader__input-box">
+              <view class="weui-uploader__input" bindtap="chooseImage"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+  <view class="weui-cell" style='font-size:32rpx;'>
+    <view class="weui-cell__bd">
+      <view class="weui-uploader">
+        <view class="weui-uploader__hd">
+          <view class="weui-uploader__title">工作证明与杰出成果</view>
+        </view>
+
+        <view class="weui-uploader__bd">
+          <view class="weui-uploader__files" id="uploaderFiles">
+            <block wx:for="{{files2}}" wx:key="*this">
+              <view class="weui-uploader__file" bindtap="previewImage2" id="{{item}}">
+                <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+              </view>
+            </block>
+            <view class="weui-uploader__input-box">
+              <view class="weui-uploader__input" bindtap="chooseImage2"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title" style='font-size:32rpx;'>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="其他补充说明" style="height: 6.3em" />
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" style='font-size:32rpx;' type="primary" bindtap="tap">申请认证</button>
+  </view>
+</view>

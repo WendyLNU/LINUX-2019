@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search-header": "/Components/search-header/search-header",
+    "modal-custom": "/Components/modal-custom/modal-custom"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#eee"
+}

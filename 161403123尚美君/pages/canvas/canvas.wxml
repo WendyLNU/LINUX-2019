@@ -1,0 +1,54 @@
+<view class="content" style='padding:0'>
+  <canvas class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback" style='height:{{h_canvasSize}}rpx;width:{{w_canvasSize}}rpx;top:{{y_canvasPositon}}rpx;left:{{x_canvasPositon}}rpx;z-index:2'></canvas>
+  <view class='canvas'style='height:{{h_canvasSize}}rpx;width:{{w_canvasSize}}rpx;top:{{y_canvasPositon}}rpx;left:{{x_canvasPositon}}rpx;backgrand:#434343;z-index:1'></view>
+  <view class='footer'>
+    <view class='item' bindtap='rightMove'>
+      <image class='img' src='/img/icon/left.png'></image>
+      <view class='info'>
+        左移视角
+      </view>
+    </view>
+    <view class='item' bindtap='leftMove'>
+      <image class='img' src='/img/icon/right.png'></image>
+      <view class='info'>
+        右移视角
+      </view>
+    </view>
+    <view class='item' bindtap='switchMode' wx:if="{{eraserMode}}" >
+      <image class='img' src='/img/icon/pencil.png'></image>
+      <view class='info'>
+        使用画笔
+      </view>
+    </view>
+
+    <view class='item' bindtap='switchMode' wx:if="{{!eraserMode}}">
+      <image class='img' src='/img/icon/eraser.png'></image>
+      <view class='info'>
+        使用橡皮
+      </view>
+    </view>
+
+    <!-- <view class='item' bindtap='preview'>
+      <image class='img' src='/img/icon/preview.png'></image>
+      <view class='info'>
+        预览图像
+      </view>
+    </view> -->
+    <view class='item' bindtap='cleardraw'>
+      <image class='img' src='/img/icon/clear.png'></image>
+      <view class='info'>
+        清空画板
+      </view>
+    </view>
+
+    <view class='item' bindtap='addToMemory'>
+      <image class='img' src='/img/icon/shencheng.png'></image>
+      <view class='info'>
+        添加到记忆
+      </view>
+    </view>
+  </view>
+  <!-- <view style='margin-top:20rpx;margin-bottom:400rpx;padding:20rpx' bindtap='addToMemory'>
+    <button style='margin-bottom:20rpx;font-size:32rpx;'>添加到记忆</button>
+  </view> -->
+</view>

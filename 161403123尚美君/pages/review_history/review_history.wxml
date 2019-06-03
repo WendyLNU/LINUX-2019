@@ -1,0 +1,23 @@
+<!--pages/view_note/view_note.wxml-->
+<view class='content'>
+  <view class='list'>
+    <view class='item' bindtap='viewMemory' data-index='{{i}}' wx:for="{{list}}" wx:for-item="x" wx:for-index="i" wx:key="id">
+      <view class='item-icon'>
+        <image src='/img/icon/memory-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>{{x.title}}</text>
+        <text class="info">点击查看记忆内容</text>
+      </view>
+      <!-- <view data-index="{{i}}" class="item-button  {{options.type=='select'?'item-selector':''}}" catchtap='tapItemButton'>
+        <view class="{{x.chosen?'active':''}}"></view>
+        <image src='/img/icon/queue-icon2.png' mode='widthFix'></image>
+      </view> -->
+       <view class='item-button-box' data-index="{{i}}" catchtap='tapItemButton'>
+        <view  class="item-button  {{options.type=='select'?'item-selector':''}}" >
+          <image src='/img/icon/queue-icon2.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

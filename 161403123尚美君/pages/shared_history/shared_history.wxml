@@ -1,0 +1,21 @@
+<!--pages/view_note/view_note.wxml-->
+<view class='content'>
+  <view class="list">
+    <view class='item' bindtap='tapItem' wx:for='{{list}}' id='{{i}}' wx:for-index="i" wx:key='code'>
+      <view class='item-icon'>
+        <image src='/img/icon/library-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>{{item.name}}</text>
+        <text class="info">分享码：{{item.code}}</text>
+      </view>
+     <view class='item-button-box' data-type='memory' id='{{i}}' catchtap='openMenu'>
+        <view class='item-button' >
+          <image src='/img/icon/queue-icon2.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+    <view class="info">
+    </view>
+  </view>
+</view>

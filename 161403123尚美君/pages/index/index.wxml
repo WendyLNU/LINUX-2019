@@ -1,0 +1,36 @@
+<search-header></search-header>
+<view class='index-container'>
+  <view class='index-body'>
+    <view class='index-start'>
+      <view class='index-start-inner'>
+      </view>
+      <view class='index-start-shadow'>
+      </view>
+      <view class='index-start-text' bindtap='goStart'>
+        <text>开始</text>
+        <text>回顾</text> 
+      </view>
+    </view>
+  </view>
+  <view class='index-masterInfo'>
+    <view class='Info'>
+      <view class='info-title'>
+        已掌握
+      </view>
+      <view class='info-content'>
+        {{masterNumber}}
+      </view>
+    </view>
+    <view class='Info'>
+      <view class='info-title'>
+        未掌握
+      </view>
+      <view class='info-content'>
+        {{notMasterNumber}}
+      </view>
+    </view>
+  </view>
+  <view class='index-addMemory'>
+    <button class='add-button' bindtap='goWrite'>写入记忆</button>
+  </view>
+</view>

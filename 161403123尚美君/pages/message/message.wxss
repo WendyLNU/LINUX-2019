@@ -1,0 +1,12 @@
+.page{
+  height: 100vh;
+  background: #f5f5f5;
+  padding-top:150px;
+}
+.more-text{
+  color: #aaa;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+
+}

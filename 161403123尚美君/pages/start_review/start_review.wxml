@@ -1,0 +1,18 @@
+<view class='bg-startview'>
+    <view class='startview-panel'>
+        <view class='startview-layout'>
+            <view class='panel-header'>
+                <view class='panel-header-text'>
+                开始回顾
+                </view>
+            </view>
+            <view>
+                <image class='icon' src='../../img/icon/startView.jpg' mode='widthFix'></image>
+            </view>
+            <view class='buttons'>
+                <button class='button-while' bindtap='reviewLib'>回顾记忆库</button>
+                <button class='button-while' bindtap='reviewQue'>回顾自定义队列</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+<view class='index-header'>
+  <view class='header-search' catchtap='tap'>
+    <image src='../../img/icon/search.png' class='search-icon'></image>
+    <input class='search-text' focus='{{true}}' placeholder='搜索' bindinput="onInput">
+    </input>
+  </view>
+</view>
+<view class='page'>
+  <view class='list' >
+    <view class='item' wx:for="{{list}}" wx:for-item="x" wx:for-index="i" wx:key="id"  data-index='{{i}}' bindtap='viewMemory'>
+      <view class='item-icon'>
+        <image src='/img/icon/memory-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>{{x.title}}</text>
+        <text class="info">{{x.info}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='more-text' wx:if='{{list.length==0}}'>
+    搜索记忆的标题
+  </view>
+
+</view>

@@ -1,0 +1,21 @@
+<view class='layout {{type}}' catchtap='cancel'>
+  <view class='window-{{type}}' catchtap='catch'>
+    <view class='window-title'>
+      {{title}}
+    </view>
+    <view class='window-content'>
+      {{content}}
+    </view>
+    <view class='text-input'>
+      <input  placeholder="{{placeholder}}" bindinput='inputText' value='{{value}}'></input>
+    </view>
+    <view class='window-buttons'>
+      <view class='button-yes' catchtap='confirm'>
+        {{button}}
+      </view>
+      <view class='button-no' catchtap='cancel'>
+        取消
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<view class="product-page">
+  <view class="row">
+    <view class='sgin'></view>
+    <view class="left">产品介绍</view>
+     <view class="right" bindtap='correct'>产品纠错</view>
+  </view>
+  <view class="list">
+    <view class='item' bindtap='checkProduct'>
+      <view class='item-icon'>
+        <image src='/img/icon/library-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>Linux常用命令</text>
+        <text class="info">记忆数：36</text>
+      </view>
+      <view class='item-button'>
+        免费
+      </view>
+    </view>
+    <view class="info">
+    </view>
+  </view>
+
+
+  <view class="row">
+    <view class='sgin'></view>
+    <view class="left">作者简介</view>
+     <view class="left certified">（尚未认证）</view>
+  </view>
+  <view class='brief '>
+    作者：Jack，辽宁大学软件工程专业学生。
+  </view>
+  <view class="row">
+    <view class='sgin'></view>
+    <view class="left">用户评价</view>
+  </view>
+  <view class="no-more">- 暂无用户评价 -</view>
+</view>
+ <view class="buttons">
+    <view bindtap='buy'>购买</view>
+  </view>

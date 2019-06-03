@@ -1,0 +1,58 @@
+@import '../view_memory/view_memory.wxss';
+.container {
+  padding: 30rpx;
+  padding-top: 120rpx;
+  padding-bottom: 250rpx;
+  background: #fff;
+}
+
+
+
+.header-button-center{
+  
+  width: 300px;
+  height: 40rpx;
+  color: #fff;
+  border-radius: 15rpx;
+  background: #43baff;
+}
+
+.padding-top {
+  padding-top: 15%;
+}
+.status{
+  font-size: 28rpx;
+  color: #aaa;
+  display: block;
+  text-align: center;
+}
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+.next{
+  position: relative;
+  margin-top:50px;
+  margin-bottom: 50px;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.next view,
+.buttons view {
+  border: 0px;
+  text-align: center;
+  border-radius: 10px;
+  background: #43baff;
+  padding: 8px;
+  color: white;
+  margin: auto;
+  margin-bottom: 12px;
+  display: block;
+  height: 20px;
+  width: 200px;
+  font-size: 14px;
+}

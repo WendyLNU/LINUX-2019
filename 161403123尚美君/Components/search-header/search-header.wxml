@@ -1,0 +1,7 @@
+<view class='index-header'>
+  <view class='header-search' catchtap='tap'>
+    <image src='../../img/icon/search.png' class='search-icon'></image>
+    <input class='search-text' disabled='{{true}}' placeholder='搜索'>
+    </input>
+  </view>
+</view>
