@@ -1,0 +1,21 @@
+/**
+ * author：_Ragnarok
+ * time:2019/4/1/19:48
+ */
+
+.qpic {
+  height: 280rpx;
+  width: 300rpx;
+}
+
+.qpiccon {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.qrpic {
+  height: 375rpx;
+  width: 375rpx;
+}

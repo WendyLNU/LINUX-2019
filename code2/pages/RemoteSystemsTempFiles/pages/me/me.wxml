@@ -1,0 +1,109 @@
+<!--pages/me/me.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <!--页头-->
+    <view class="weui-panel__bd">
+
+      <navigator class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" url="">
+
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{avatarUrl}}"></image>
+        </view>
+
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">昵称: {{nickName}}</view>
+
+        </view>
+
+      </navigator>
+    </view>
+
+    <view class="page__bd page__bd_spacing">
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <navigator url="../me/cj">
+            <view class="page__title">{{mylottery}}</view>
+            <view class="placeholder">我的抽奖</view>
+          </navigator>
+        </view>
+        <view class="weui-flex__item">
+          <navigator url="fb">
+            <view class="page__title">{{myissue}}</view>
+            <view class="placeholder">我的发布</view>
+          </navigator>
+        </view>
+
+
+        <view class="weui-flex__item">
+          <navigator url="zj">
+            <view class="page__title">{{myluck}}</view>
+            <view class="placeholder">我的中奖</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-panel">
+
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+          <image src="1.jpg" style="width: 20px;height: 20px;margin-right: 5px ;" />
+        </view>
+        <view>我的乐币：{{coin}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-panel">
+    <view class="page__bd">
+      <navigator url='../index/other?page=qiandao'>
+        <view class="weui-panel__ft">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+            <view class="weui-cell__bd">签到</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+        </view>
+      </navigator>
+
+      <navigator url='../index/other?page=xinyuan'>
+        <view class="weui-panel__ft">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+            <view class="weui-cell__bd">心愿</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+        </view>
+      </navigator>
+
+      <navigator url='../index/other?page=fuwu'>
+        <view class="weui-panel__ft">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+            <view class="weui-cell__bd">线下和其他服务</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+        </view>
+      </navigator>
+
+      <navigator url='../index/other?page=guanyu'>
+        <view class="weui-panel__ft">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+            <view class="weui-cell__bd">关于我们</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+        </view>
+      </navigator>
+
+      <navigator url='../index/other?page=shengming'>
+        <view class="weui-panel__ft">
+          <view class="weui-cell weui-cell_access weui-cell_link">
+            <view class="weui-cell__bd">用户协议和隐私政策</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+        </view>
+      </navigator>
+
+    </view>
+    <!--主体-->
+  </view>
+  <view></view>
+  <!--未设置页脚-->
+</view>

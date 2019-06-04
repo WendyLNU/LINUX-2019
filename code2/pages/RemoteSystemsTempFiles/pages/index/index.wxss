@@ -1,0 +1,177 @@
+/*授权页面*/
+
+.authorview {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.authorbutton {
+  background-color: #32cd32;
+}
+
+.authortext {
+  font-weight: 100;
+  font-size: 20rpx;
+}
+
+/*去除滚动条*/
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/*顶部导航栏*/
+
+.tab {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.tab-item {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #8f9193;
+}
+
+.active {
+  text-align: center;
+  color: #ff502c;
+  font-size: 45rpx;
+}
+
+/*内容区域*/
+
+.content-box {
+  margin-top: 80rpx;
+}
+
+.content {
+  text-align: center;
+  font-size: 38rpx;
+}
+
+.content-item {
+  margin-top: 10rpx;
+  height: 100%;
+  flex: 1 1 auto;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.content-box-litter {
+  width: 96%;
+  height: 180rpx;
+  margin: 8rpx;
+  background-color: #8f9193;
+  border-radius: 5px;
+}
+
+.content-box-medium {
+  width: 96%;
+  height: 360rpx;
+  margin: 8rpx;
+  background-color: #8f9193;
+  border-radius: 5px;
+}
+
+.content-box-big {
+  width: 96%;
+  height: 645rpx;
+  margin: 8rpx;
+  background-color: #8f9193;
+  border-radius: 5px;
+}
+
+.indexbuttons {
+  margin-top: 10rpx;
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.indexbuttonstext {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 20rpx;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+/*banner*/
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 720rpx;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.cp {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.c1 {
+  width: 50%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.c2 {
+  width: 50%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.i {
+  flex: 0 0 auto;
+  display: flex;
+  height: 100px;
+}
+
+.t1 {
+  background-color: #333;
+}
+
+.t2 {
+  background-color: #555;
+  height: 200px;
+}
+
+.t3 {
+  background-color: #777;
+}
+
+.t4 {
+  background-color: #999;
+}
+
+.feed-image{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,4 @@
+.weui-navbar__title{
+  color:green;
+  font-size:20px
+}

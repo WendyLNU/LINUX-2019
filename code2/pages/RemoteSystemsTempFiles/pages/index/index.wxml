@@ -1,0 +1,97 @@
+<!--V2.0, 瀑布块样式, @作者：戚子强-->
+
+<!--获取权限开始-->
+<view class='authorview' wx:if="{{!hasUserInfo && canIUse}}">
+  <button class='authorbutton' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权后继续 </button>
+  <text class='authortext'>\n这将不会泄露您的隐私信息，请放心使用\n</text>
+</view>
+<!--获取权限结束-->
+
+<!--正式页面开始-->
+<view class='content-box' wx:else>
+  <!--顶部TAB开始-->
+  <scroll-view class="tab" scroll-x scroll-left="{{tabScroll}}" scroll-with-animation="true">
+    <block wx:for="{{menuList}}" wx:key="index">
+      <view class="tab-item {{currentTab == index ? 'active' : ''}}" data-current="{{index}}" bindtap='clickMenu'>{{item.name}}</view>
+    </block>
+  </scroll-view>
+  <!--顶部TAB结束-->
+  <!--轮播图开始-->
+  <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
+    <swiper-item class="banner" wx:for="{{menuLists[currentTab]}}" wx:key="index">
+      <navigator url='{{bannerto[currentTab][index]}}'>
+        <image src="{{item}}" class='banner-image'></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+  <!--轮播图结束-->
+  <view class='indexbuttons' wx:if="{{currentTab==0}}">
+    <navigator url="other?page=shengming" hover-class="none">
+      <image style='height:80rpx;width:80rpx' src='../../res/icon/shengming.png' mode='scaleToFill'></image>
+    </navigator>
+    <navigator url="other?page=xinyuan" hover-class="none">
+      <image style='height:80rpx;width:80rpx' src='../../res/icon/xinyuan.png' mode='scaleToFill'></image>
+    </navigator>
+    <navigator url="other?page=qiandao" hover-class="none">
+      <image style='height:80rpx;width:80rpx' src='../../res/icon/qiandao.png' mode='scaleToFill'></image>
+    </navigator>
+    <navigator url="other?page=fuwu" hover-class="none">
+      <image style='height:80rpx;width:80rpx' src='../../res/icon/fuwu.png' mode='scaleToFill'></image>
+    </navigator>
+    <navigator url="other?page=guanyu" hover-class="none">
+      <image style='height:80rpx;width:80rpx;text-color:red' src='../../res/icon/guanyu.png' mode='scaleToFill'></image>
+    </navigator>
+  </view>
+  <view class='indexbuttonstext' wx:if="{{currentTab==0}}">
+    <text>必读</text>
+    <text>心愿</text>
+    <text>签到</text>
+    <text>服务</text>
+    <text>关于</text>
+  </view>
+  <!--瀑布流开始-->
+  <swiper class="content" style='height:{{feedHeight*1.07}}rpx' current="{{currentTab}}" bindchange="changeContent">
+    <swiper-item class="content-item" wx:for="{{menuList}}" wx:key="index" bindchange="changeContent">
+      <view class="cp">
+        <view class="c1">
+          <view wx:for="{{c1List}}" wx:key="index" wx:for-item="i" class='content-box-{{i[1]}}' data-toid="{{i[2]}}" bindtap='changePageToDetail'>
+            <image src='{{i[0]}}' class='feed-image' mode='scaleToFill'></image>
+          </view>
+        </view>
+        <view class="c2">
+          <view wx:for="{{c2List}}" wx:key="index" wx:for-item="j" class='content-box-{{j[1]}}' data-toid="{{j[2]}}" bindtap='changePageToDetail'>
+            <image src='{{j[0]}}' class='feed-image' mode='scaleToFill'></image>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <!--瀑布流结束-->
+  <button type='primary' bindtap='refreshindex'>刷完了？戳我或下拉刷新！</button>
+</view>
+<!--正式页面结束-->
+
+
+
+<!--
+<scroll-view scroll-y wx:for="{{menuList}} " wx:key="index " bindchange="changeContent ">
+  <view class='content-box-litter'>LITTER</view>
+  <view class='content-box-medium'>MEDIUM</view>
+  <view class='content-box-big'>BIG</view>
+  <view class='content-box-litter'>LITTER</view>
+  <view class='content-box-big'>BIG</view>
+</scroll-view>
+-->
+
+<!--
+  <swiper class="content " current="{{currentTab}} " bindchange="changeContent ">
+    <swiper-item class="content-item " wx:for="{{menuList}} " wx:key="index " bindchange="changeContent ">
+      {{item.name}}
+      <view class='content-box-litter'>LITTER</view>
+      <view class='content-box-medium'>MEDIUM</view>
+      <view class='content-box-big'>BIG</view>
+      <view class='content-box-litter'>LITTER</view>
+      <view class='content-box-big'>BIG</view>
+    </swiper-item>
+  </swiper>
+  -->
