@@ -1,13 +1,13 @@
 # wxcake-master
 电商类小程序 包含预览、购物车、添加地址、支付、购买等一系列完整的流程
 
-wxbestcake-master
+wxcake-master
 电商类小程序 包含预览、购物车、添加地址、支付、购买等一系列完整的流程
 
 项目说明
 基于微信小程序开发的一款移动端电商
 目录结构
-wxbestcake-master/
+wxcake-master/
      |-pages/                      # 小程序页面相关文件
          |- buy
            |- index.js
