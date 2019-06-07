@@ -33,16 +33,16 @@
 
 #### 四、安装
 
-- 安装mysql
+- 安装mysql  
   sudo install mysql-server  
 
-- 安装jdk
+- 安装jdk  
   wget http://gw.lvith.cn:8080/201704/tools/jdk-linux-x64.tar.gz  
   tar zxvf  jdk-linux-x64.tar.gz  
   sudo vim /etc/profile  
   source /etc/profile  
 
-- 配置tomcat
+- 配置tomcat  
   tar zxvf apache-tomcat-7.0.94.tar.gz  
   cp hoj_2.war /home/ubuntu/apache-tomcat-7.0.94/webapps  
   cp lib/*.jar /home/ubuntu/apache-tomcat-7.0.94/lib  
@@ -50,12 +50,12 @@
   启动：/home/ubuntu/apache-tomcat-7.0.94/bin/startup.sh  
   关闭：/home/ubuntu/apache-tomcat-7.0.94/bin/shutdown.sh  
 
-- 安装activemq
+- 安装activemq  
   tar zxvf apache-activemq-5.15.9-bin.tar.gz  
 
   启动: /home/ubuntu/apache-activemq-5.15.9/bin/linux-x86-64/activemq start  
 
-- 配置Judge
+- 配置Judge  
   mkdir -p /home/ubuntu/judge/data  
   mkdir -p /home/ubuntu/judge/judge_work  
   sudo cp libtestjni.so /usr/lib  
