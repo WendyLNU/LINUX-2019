@@ -13,11 +13,11 @@
 
 #### 二、OJ前台
 
-![题目](C:\Users\Administrator\Desktop\gitttt\LINUX-2019\161403214侯振桓\img\e.png)
+![题目](https://github.com/houzena/LINUX-2019/blob/master/161403214%E4%BE%AF%E6%8C%AF%E6%A1%93/img/e.png)
 
-![判题队列](C:\Users\Administrator\Desktop\gitttt\LINUX-2019\161403214侯振桓\img\b.png)
+![判题队列](https://github.com/houzena/LINUX-2019/blob/master/161403214%E4%BE%AF%E6%8C%AF%E6%A1%93/img/b.png)
 
-![排行榜](C:\Users\Administrator\Desktop\gitttt\LINUX-2019\161403214侯振桓\img\d.png)
+![排行榜](https://github.com/houzena/LINUX-2019/blob/master/161403214%E4%BE%AF%E6%8C%AF%E6%A1%93/img/d.png)
 
 #### 三、后台技术
 
