@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>hoj</title>
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/local.css" rel="stylesheet">
+<script src="jquery-2.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/check.js"></script>
+</head>
+
+<body style="background-color:wheat">
+<div class="container">
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" >在线评测</a>
+    </div>
+    <div>
+       <ul class="nav navbar-nav">
+            <li><a href="index.jsp"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+            <li><a href="ProblemSet"><span class="glyphicon glyphicon-th-list"></span>题集</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-signal"></span>总榜</a></li>
+            <li><a href="contestlist.html"><span class="glyphicon glyphicon-flag"></span>比赛</a></li>
+            <li><a href="StatusList"><span class="glyphicon glyphicon-ok-circle"></span>判题队列</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+            &nbsp;&nbsp;&nbsp;
+        </ul>
+    </div>
+
+</nav>
+<div class="jumbotron" style="padding-top: 10px">
+<center><button type="button" class="btn btn-info">从本地导入</button></center>
+<form class="form-horizontal" role="form" method="POST" style="padding-top: 10px;" action="AddProblem">
+        <div class="form-group">
+                <label>标题</label>
+                
+                <input type="text" class="form-control" name="title">
+                
+                
+        </div>
+        <div class="form-group">
+                <label>题目描述</label>
+                <textarea class="form-control" rows="3" name="description"></textarea>
+        </div>
+        <div class="form-group">
+                <label>Input描述</label>
+                <textarea class="form-control" rows="3" name="input"></textarea>
+        </div>
+        <div class="form-group">
+                <label>Output描述</label>
+                <textarea class="form-control" rows="3" name="output"></textarea>
+        </div>
+        <div class="form-group">
+                <label>样例输入</label>
+                <textarea class="form-control" rows="3" name="sample_input"></textarea>
+        </div>
+        <div class="form-group">
+                <label>样例输出</label>
+                <textarea class="form-control" rows="3" name="sample_output"></textarea>
+        </div>
+        <div class="form-inline form-group">
+                        <label>时间限制</label>
+                
+                        <input type="text" class="form-control" name="timelimit">
+                        &nbsp;ms&nbsp;
+                        <label>内存限制</label>
+                
+                        <input type="text" class="form-control" name="spacelimit">&nbsp;KB
+        </div>
+        <p class="text-info" style="font-size: 15px">ps : 提交后可以在题目页面点<u>管理数据</u>，添加后台数据</p>
+        <center><button type="submit" class="btn btn-primary">提交</button></center>
+        
+</form>
+</div>
+<center>
+<div id="footer" class="center">
+    CopyRight by <a href="#">houzena</a> 2018
+</div>
+</center>
+</div>
+</body>
+</html>

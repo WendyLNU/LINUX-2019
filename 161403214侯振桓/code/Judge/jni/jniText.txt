@@ -1,0 +1,3 @@
+gcc -I/usr/lib/jvm/jdk1.8.0_181/include/ -fPIC -Wall -c judgeString.c
+gcc -shared -o libtestjni.so judgeString.o
+sudo cp libtestjni.so /usr/lib
