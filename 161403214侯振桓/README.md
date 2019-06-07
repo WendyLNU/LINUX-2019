@@ -29,7 +29,7 @@
 
 - Web和Judge两个进程通过ActiveMQ通信，因此Judge可以分布在不同的机器上
 
-  详细文档点这里
+  [详细文档点这里](https://github.com/houzena/LINUX-2019/edit/master/161403214%E4%BE%AF%E6%8C%AF%E6%A1%93/实验报告.md)
 
 #### 四、安装
 
