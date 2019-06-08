@@ -1,0 +1,29 @@
+<view class="container">
+  <image class="head-image" src="{{oop.img}}"></image>
+  <text class="title">{{oop.title}}</text>
+  
+    <view class="author-box">
+      <image class="avatar" src="{{oop.avatar}}"></image>
+      <text class="author">{{oop.author}}</text>
+    </view>
+    
+  <text class="detail">{{oop.detail}}</text>
+</view>
+
+<view class="tool">
+  <view class="tool-item" catchtap="onUpTap" data-index-id="{{oop.indexId}}">
+     <image animation="{{animationUp}}" wx:if="{{oop.upStatus}}" src="/images/icon/liked.png" />
+     <image animation="{{animationUp}}" wx:else src="/images/icon/like.png" />
+    <text class="title1">{{oop.upNum}}</text>
+  </view>
+  
+<view class="tool-item comment" catchtap="onCommentTap" data-index-id="{{oop.indexId}}">
+    <image src="/images/icon/message.png"></image>
+    <text class="title1">{{oop.commentNum}}</text>
+</view>
+  <view class="tool-item" catchtap="onCollectionTap" data-index-id="{{oop.indexId}}">
+    <image wx:if="{{oop.collectionStatus}}" src="/images/icon/collected.png" />
+    <image wx:else src="/images/icon/collection.png" />
+    <text class="title1">{{oop.collectionNum}}</text>
+  </view>
+</view>

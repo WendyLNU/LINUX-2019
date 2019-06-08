@@ -1,0 +1,24 @@
+
+<view class=".contaire">
+<text class=".jianjie">东北大学大学生家教：</text>
+<text class=".detail1">东北大学,简称东大(NEU)，是中华人民共和国教育部直属的理工类研究型大学，坐落于东北中心城市沈阳，是985,211,双一流高校。作为沈阳地区最高学府。东北大学的大学生作为家教老师一直受到家长们的喜爱，更甚至很多家长只要求东大的学生给孩子当家教老师。这几年东大的学生无论在文化课上面还是其他一些学习辅导上都给学生很大的帮助。对于小学生，他们会很细心引导他们对学习产生热爱。对于初高中生，他们会更多教会他们学习方法，并通过自己的亲身经历来鼓舞学生。以下几位大学生家教都有很好的经验，现推荐给各位家长。</text>
+</view>
+
+
+
+
+
+
+
+<view class='background'>
+  <view class='teacher' wx:for="{{teacherList}}">
+    <image src='{{item.imagePath}}'></image>
+    <view class='teacher-details' style='background-color: #FFFFCC'>
+      <text>姓名：{{item.name}}</text>
+      <text>性别：{{item.sex}}</text>
+      <text>毕业院校：{{item.school}}</text>
+      <text>所在科目：{{item.subject}}</text>
+      <text>联系方式：{{item.relation}}</text>
+    </view>
+  </view>
+</view>

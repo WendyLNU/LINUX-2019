@@ -1,0 +1,24 @@
+<view class=".contaire">
+<text class=".jianjie">辽宁大学大学生家教：</text>
+<text class=".detail1">辽宁大学（Liaoning University）是辽宁省人民政府主管的一所具备文、史、哲、经、法、理、工、管、艺等九大学科门类的综合性重点大学，是国家“211工程”重点建设院校。辽大的文科专业在省内都是首屈一指的。所以辽大的学生在做艺术家教以及补习文科知识的时候都会很受家长的喜爱。而且在出国补习雅思以及托福方面，辽大的大学生家教也会给与很大的帮助。而且辽大处于市中心，所以到任何地方做家教都很方便，这也导致了辽大的大学生家教一直广受欢迎。以下介绍的辽大大学生家教老师都是很有经验，十分有特长的教学方法的老师。</text>
+</view>
+
+
+
+
+
+
+
+
+<view class='background'>
+  <view class='teacher' wx:for="{{teacherList}}">
+    <image src='{{item.imagePath}}'></image>
+    <view class='teacher-details' style='background-color: #FFFFCC'>
+      <text>姓名：{{item.name}}</text>
+      <text>性别：{{item.sex}}</text>
+      <text>毕业院校：{{item.school}}</text>
+      <text>所在科目：{{item.subject}}</text>
+      <text>联系方式：{{item.relation}}</text>
+    </view>
+  </view>
+</view>

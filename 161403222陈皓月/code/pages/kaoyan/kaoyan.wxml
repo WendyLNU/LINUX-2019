@@ -1,0 +1,58 @@
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/16.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：郑冰\n\t性别：男\n\t年龄25：\n\t就读院校：东北大学\n\t所教科目：考研政治，数学\n\t联系电话：13876032276</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/6.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：秦铭\n\t性别：女\n\t年龄：20\n\t就读院校：沈阳大学\n\t所教科目：考研英语\n\t联系电话：13572602276</text>
+</view>
+
+
+
+<view> 
+      <image class="tuxiang" src="/images/xiaoxue/7.jpg"></image>  
+</view>
+
+<view>
+      <text class='jianjie'>\t姓名：王东\n\t性别：男\n\t年龄：21\n\t就读院校：沈阳师范大学\n\t所教科目：考研数学\n\t联系电话：15977853566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/8.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：杨硕\n\t性别：女\n\t年龄：22\n\t就读院校：东北大学\n\t所教科目：考研英语，政治\n\t联系电话：1363755566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/9.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：李月剑\n\t性别：男\n\t年龄：20\n\t就读院校：沈阳建筑大学\n\t所教科目：考研数学\n\t联系电话：17372506566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/10.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：孙萌萌\n\t性别：女\n\t年龄：23\n\t就读院校：沈阳理工大学\n\t所教科目：考研政治，数学\n\t联系电话：18935405566</text>
+</view>
+
+
+

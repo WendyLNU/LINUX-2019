@@ -1,0 +1,56 @@
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/3.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：秦以茹\n\t性别：女\n\t年龄：23\n\t就读院校：沈阳音乐学院\n\t所教科目：拉丁\n\t联系电话：17343532276</text>
+</view>
+
+<view> 
+      <image class="tuxiang" src="/images/xiaoxue/1.jpg"></image>  
+</view>
+
+<view>
+      <text class='jianjie'>\t姓名：张蒙\n\t性别：女\n\t年龄：21\n\t就读院校：沈阳师范大学\n\t所教科目：形体，民族舞\n\t联系电话：15977853566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/20.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：杨亿宁\n\t性别：女\n\t年龄：22\n\t就读院校：沈阳音乐学院\n\t所教科目：吉他，美声\n\t联系电话：13738235566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/18.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：李月冰\n\t性别：女\n\t年龄：23\n\t就读院校：沈阳音乐学院（南校区）\n\t所教科目：音乐，舞蹈\n\t联系电话：17533230566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/19.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：孙武月\n\t性别：女\n\t年龄：23\n\t就读院校：沈阳鲁迅美术学院\n\t所教科目：国画\n\t联系电话：18300235566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/20.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：郑露\n\t性别：女\n\t年龄：19\n\t就读院校：沈阳音乐学院\n\t所教科目：舞蹈\n\t联系电话：13955032276</text>
+</view>
+

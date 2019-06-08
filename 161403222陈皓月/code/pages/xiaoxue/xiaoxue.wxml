@@ -1,0 +1,55 @@
+<view> 
+      <image class="tuxiang" src="/images/xiaoxue/1.jpg"></image>  
+</view>
+
+<view>
+      <text class='jianjie'>\t姓名：张蒙\n\t性别：女\n\t年龄：21\n\t就读院校：沈阳师范大学\n\t所教科目：小学英语\n\t联系电话：15977853566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/2.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：杨小东\n\t性别：男\n\t年龄：22\n\t就读院校：东北大学\n\t所教科目：小学数学\n\t联系电话：13738235566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/3.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：李月月\n\t性别：女\n\t年龄：20\n\t就读院校：辽宁大学\n\t所教科目：小学英语，语文\n\t联系电话：17533230566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/4.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：孙武\n\t性别：男\n\t年龄：23\n\t就读院校：沈阳大学\n\t所教科目：小学数学\n\t联系电话：18300235566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/5.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：郑海露\n\t性别：女\n\t年龄：19\n\t就读院校：东北大学\n\t所教科目：小学奥数\n\t联系电话：13955032276</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/6.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：秦铭\n\t性别：女\n\t年龄：20\n\t就读院校：沈阳大学\n\t所教科目：小学英语，奥数\n\t联系电话：13763532276</text>
+</view>

@@ -1,0 +1,18 @@
+<template name="indexs">
+    <block wx:for="{{indexList}}"wx:for-item="item"wx:for-index="idx">
+    <view class="item" bindtap="seeDetail" id="0">
+      <view>
+        <image src="{{item.img}}" style="width:75px;height:58px;"></image>
+      </view>
+      <view class="desc">
+        <view class="title">{{item.title}}</view>
+        <view class="count">
+        <view>{{item.zhuti}}</view>
+          <view class="liulan">{{item.liulan}}</view>
+          <view class="pinglun">{{item.pinglun}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="hr2"></view>
+    </block>
+</template>
