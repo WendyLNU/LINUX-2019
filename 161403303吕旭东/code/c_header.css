@@ -1,0 +1,98 @@
+*{
+   padding: 0;
+   margin: 0;
+ }
+body{
+  background: url("src/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-width: 1024px;
+}
+.header{
+  height: 35px;
+  width: 100%;
+  top: 0;
+  position: relative;
+  background: black;
+  z-index: 10;
+}
+
+#aa{
+  height: 25px;
+  width: 260px;
+  left: 2%;
+  top: 5px;
+  padding-left: 3px;
+  position: relative;
+  border: 1px solid;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  opacity: .7;
+  outline-style: none;
+}
+#ab{
+  height: 25px;
+  width: 45px;
+  left: 2%;
+  top: 5px;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  position: relative;
+  border: 2px solid #fff;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  opacity: .7;
+  cursor: pointer;
+}
+#aa,#ab:hover{
+  opacity: 1;
+}
+
+#dh{
+  top: 0;
+  position: fixed;
+  z-index: 11;
+}
+#dh ul li p{
+  color: #FFF;
+  width: 40px;
+  height: 35px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px;
+  font-family: Microsoft Yahei;
+  font-weight: 2px;
+  position: relative;
+}
+#dh ul li p:hover{
+  background: #555555;
+  cursor: pointer;
+}
+#dh ul li ul li a{
+  color: #FFF;
+  width: 120px;
+  height: 35px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px;
+  font-family: Microsoft Yahei;
+  font-weight: 2px;
+  cursor: pointer;
+}
+#dh{
+  margin:0 auto;
+  position: absolute;
+  right: 0;
+}
+#dh ul li {list-style: none;float: left;}
+#dh ul li a:hover{background-color: black;}
+#dh ul:hover{display: block;}
+#dh ul li ul{background-color: black;position: absolute;display: none;right: 0}
+#dh ul li ul li{float: none;background-color: black;}
+#dh ul li:hover ul{ display: block;}
+#dh ul li ul li:hover{opacity: .7}

@@ -1,0 +1,119 @@
+*{margin: 0;padding: 0}
+.LeNav{
+  position: absolute;
+  top: 270px;
+  left: 30px;
+  z-index: 5;
+}
+.LeNav ul{
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.LeNav ul li a{
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  padding: 2px;
+  background: rgba(0,0,0,0);
+  display: block;
+  -webkit-border-radius: 15px 0 0 15px;
+  border-radius: 15px 0 0 15px;
+
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition:all .5s;
+  transition:all .5s;
+}
+.LeNav ul li p{
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  padding: 2px;
+  background: rgba(0,0,0,0);
+  color: black;
+  display: block;
+  -webkit-border-radius: 15px 0 0 15px;
+  border-radius: 15px 0 0 15px;
+}
+.LeNav ul li ul{
+  float: right;
+  margin: -29px 0 0 -6px;
+}
+.LeNav ul li ul li{
+  position: absolute;
+  font-family: sans-serif;
+  display: block;
+  width: 0px;
+  height: 20px;
+  background: rgba(0,0,0,.5);
+  color: white;
+  -webkit-border-radius: 0 15px 15px 0;
+  border-radius: 0 15px 15px 0;
+  margin: 0px;
+  padding: 3px 0 3px 0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition:all .5s;
+  transition:all .5s;
+  opacity: 0;
+}
+
+.LeNav ul li:hover a{
+  border: 1px solid black;
+}
+.LeNav ul li:hover ul li{
+  width: 100px;
+  -webkit-transition:all .5s;
+  transition:all .5s;
+  opacity: 1;
+}
+
+.s1 p:after{
+  content: '';
+  width: 0;
+  height: 0;
+  left: 7px;
+  top: 17px;
+  border-width: 8px;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  position: absolute;
+}
+.s4 p:after{
+  content: '';
+  width: 0;
+  height: 0;
+  left: 6px;
+  top: 214px;
+  border-width: 8px;
+  border-color: transparent  transparent black transparent;
+  border-style: solid;
+  position: absolute;
+}
+.s23 p:after{
+  content: '';
+  width: 0;
+  height: 0;
+  left: 7px;
+  top: 109px;
+  border-width: 8px;
+  border-color: transparent  transparent black transparent;
+  border-style: solid;
+  position: absolute;
+}
+.s23 p:before{
+  content: '';
+  width: 0;
+  height: 0;
+  left: 7px;
+  top: 124px;
+  border-width: 8px;
+  border-color:black transparent  transparent  transparent;
+  border-style: solid;
+  position: absolute;
+}
+
+.scrolling{color:#a967f0;text-indent: 0}

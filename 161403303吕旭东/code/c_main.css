@@ -1,0 +1,154 @@
+body{
+  min-width: 1500px;
+}
+.main{
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: 'c1';
+  src: url('src/c1.ttf');
+}
+@font-face {
+  font-family: 'c2';
+  src: url('src/c2.ttf');
+}
+#m1,#m2,#m3,#m4,#m5,#m6{
+  overflow: hidden;
+}
+
+#m1,#m2,#m3,#m4,#m5,#m6{
+  left: 5%;
+  width: 85%;
+  height: 300px;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px 100px 20px 100px;
+  position: relative;
+  -webkit-box-shadow: 8px 8px 1px #000000;
+  -moz-box-shadow: 8px 8px 1px #000000;
+  -o-box-shadow: 8px 8px 1px #000000;
+  box-shadow: 8px 8px 1px #000000;
+  background: rgba(171,205,235,.4);
+}
+#m1 .Download{left: 40%;}
+#m1 .ReadMore{left: 70%;}
+
+#m2 .Download{left: 40%;}
+#m2 .ReadMore{left: 70%;}
+#m2 .img1{
+  width: 270px;
+  height: 200px;
+  left: 20px;
+  top: 50px;
+  position: absolute;
+  opacity: 0;
+}
+#m2 .img2{
+  width: 250px;
+  height: 200px;
+  right: 30px;
+  top: 50px;
+  position: absolute;
+  opacity: 0;
+}
+#m2:hover .img1{
+  -webkit-animation: move1 1s;
+  animation: move1 1s;
+  -webkit-animation-fill-mode: forwards ;
+  animation-fill-mode: forwards;
+}
+#m2:hover .img2{
+  -webkit-animation: move2 1s;
+  animation: move2 1s;
+  -webkit-animation-fill-mode: forwards ;
+  animation-fill-mode: forwards;
+}
+
+#m3 .Download{left: 50%;margin-left: -40px}
+#m3 .img3{
+  width: 300px;
+  height: 200px;
+  right: 50px;
+  top: 50px;
+  position: absolute;
+  opacity: 0;
+}
+#m3:hover .img3{
+  -webkit-animation: move1 1s;
+  animation: move1 1s;
+  -webkit-animation-fill-mode: forwards ;
+  animation-fill-mode: forwards;
+}
+
+#m5 .Start{left: 50%;}
+#m5 .Customer{left: 80%;}
+
+#m6 .ReadMore{left: 50%;}
+
+
+.template{
+  font-family: sans-serif;
+  padding: 5px;
+  color: #464aff;
+  bottom: 20px;
+  position: absolute;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.template:hover{
+  color: white;
+}
+.template:active{
+  text-decoration: solid;
+}
+
+/* -------------------------------------------------- */
+@-webkit-keyframes move1 {
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes move1 {
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes move2 {
+  from{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes move2 {
+  from{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
