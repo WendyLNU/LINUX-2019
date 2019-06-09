@@ -12,7 +12,7 @@
   max_number: 20,
 
   // 控制是否显示顶部附加信息文字。
-  showMessage: true,
+  showMessage: false,
 
   // 时间自动排序。
   // !!!请确保打开此项时，使用的是标准日期格式！(即：YYYY-MM-DD HH:MM)
@@ -36,10 +36,7 @@
   divide_color_by: 'name',
 
   // 字段的值与其对应的颜色值
-  color: {
-    "Chinese": "#1177CC",
-    "Japanese": "#667788"
-  },
+  color: {},
 
   // 颜色渐变：颜色绑定增长率
   changeable_color: false,
@@ -65,7 +62,7 @@
   item_x: 250,
 
   // 时间点间隔时间。
-  interval_time: 1,
+  interval_time: 0.1,
 
   // 上方文字水平高度。
   text_y: -50,
