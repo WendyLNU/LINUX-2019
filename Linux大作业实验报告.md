@@ -11,10 +11,10 @@ Linux大作业实验报告
 3.编写网站  
 编写代码，实现功能。  
 ![image](https://github.com/xgd1998/LINUX-2019/blob/master/%E7%85%A7%E7%89%87/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_dde-desktop_20190610101903.png)  
-![image]()  
-![image]()  
-![image]()  
-![image]()  
+![image](https://github.com/xgd1998/LINUX-2019/blob/master/%E7%85%A7%E7%89%87/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_dde-desktop_20190610101928.png)  
+![image](https://github.com/xgd1998/LINUX-2019/blob/master/%E7%85%A7%E7%89%87/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_dde-desktop_20190610101945.png)  
+![image](https://github.com/xgd1998/LINUX-2019/blob/master/%E7%85%A7%E7%89%87/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_dde-desktop_20190610102301.png)  
+![image](https://github.com/xgd1998/LINUX-2019/blob/master/%E7%85%A7%E7%89%87/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_dde-desktop_20190610102311.png)  
 
 实验小结：  
 通过本次实验，我对于linux的理解更深了，对于linux环境下编程以及Apache环境的搭建有了一定了解。  
