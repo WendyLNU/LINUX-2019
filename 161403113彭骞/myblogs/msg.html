@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <link rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+    
+    * {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+    }
+    
+    a:hover {
+        color: red;
+        text-decoration: none;
+    }
+    
+    #top {
+        width: 100%;
+        height: 90px;
+        background-color: white;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    
+    #menu {
+        width: 1000px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    #menu img {
+        height: 90px;
+    }
+    
+    #menu ul {
+        list-style-type: none;
+    }
+    
+    #menu ul li {
+        float: left;
+        height: 90px;
+        line-height: 90px;
+        margin-right: 50px;
+    }
+    
+    #menu ul li a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    #menu ul li a:hover {
+        color: #65b5ff;
+        text-decoration: none
+    }
+    
+    .excerpt {
+        clear: both;
+        border: 1px solid #EAEAEA;
+        padding: 20px 20px 20px 255px;
+        overflow: hidden;
+        background-color: #fff;
+        margin-bottom: -1px;
+    }
+    
+    .excerpt:hover {
+        background-color: #FBFDFF;
+        border-color: #42B5EF;
+        position: relative;
+        z-index: 20;
+    }
+    
+    .excerpt-1 {
+        border-radius: 4px 4px 0 0;
+    }
+    
+    .excerpt .focus {
+        float: left;
+        margin-left: -235px;
+        width: 220px;
+    }
+    
+    .excerpt .thumb {
+        border-radius: 5px;
+        width: 220px;
+        height: 150px;
+        overflow: hidden;
+    }
+    
+    .excerpt img {
+        display: inline;
+    }
+    
+    .excerpt .focus:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    }
+    
+    .excerpt header {
+        margin-bottom: 10px;
+    }
+    
+    .excerpt .cat {
+        color: #FFF;
+        background-color: #3399CC;
+        padding: 3px 6px;
+        font-size: 12px;
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        margin-right: 6px;
+    }
+    
+    .excerpt .cat:hover {
+        opacity: .8;
+    }
+    
+    .excerpt .cat i {
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        right: -4px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        vertical-align: middle;
+        border-left: 4px solid #3399CC;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+    }
+    
+    .excerpt h1 {
+        display: inline;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 0;
+        font-weight: bold;
+    }
+    
+    .excerpt h1 a {
+        color: #555;
+    }
+    
+    .excerpt h1 a:hover {
+        color: #3399CC;
+    }
+    
+    .excerpt .meta {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .excerpt .time,
+    .excerpt .comment,
+    .excerpt .views {
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+    .excerpt .time:hover,
+    .excerpt .comment:hover,
+    .excerpt .views:hover {
+        color: #3399CC;
+    }
+    
+    @media (max-width:680px) {
+        .excerpt .comment {
+            display: none;
+        }
+    }
+    
+    .excerpt .meta a {
+        color: #999;
+    }
+    
+    .excerpt .note {
+        font-size: 12px;
+        color: #999;
+        word-wrap: break-word;
+        line-height: 20px;
+        cursor: default;
+    }
+</style>
+
+<body>
+    <div id="top">
+        <div id="menu">
+            <ul>
+                <li><img src="cat2.jpg"></li>
+                <li><a href="index.html"> 首页</a></li>
+                <li><a href="article.html">随笔</a></li>
+                <li><a href="msg.html">留言板</a></li>
+                <li class="mi"><a href="login.html">登陆</a>/<a href="reg.html">注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <img src="star1.jpg" width="100%" height="300px">
+
+    <br \><br \><br \>
+    <h1>网友留言</h1>
+    <article class="excerpt excerpt-1">
+        <a class="focus" href="article.html" title=""><img class="thumb" data-original="view5.jpg" src="view5.jpg" alt=""></a>
+        <header>
+            <h2><a href="article.html" title="">标题标题</a></h2>
+        </header>
+        <p class="meta">
+            <time class="time"><i class="glyphicon glyphicon-time"></i> 201９-６-２ 13:13:44</time>
+            <span class="views"><i class="glyphicon glyphicon-eye-open"></i>网友１</span>
+            <p class="note"> 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+    </article>
+    <article class="excerpt excerpt-1">
+        <a class="focus" href="article.html" title=""><img class="thumb" data-original="view5.jpg" src="view5.jpg" alt=""></a>
+        <header>
+            <h2><a href="article.html" title="">标题标题</a></h2>
+        </header>
+        <p class="meta">
+            <time class="time"><i class="glyphicon glyphicon-time"></i> 201９-６-２ 13:13:44</time>
+            <span class="views"><i class="glyphicon glyphicon-eye-open"></i>网友２</span>
+            <p class="note"> 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+    </article>
+    <article class="excerpt excerpt-1">
+        <a class="focus" href="article.html" title=""><img class="thumb" data-original="view5.jpg" src="view5.jpg" alt=""></a>
+        <header>
+            <h2><a href="article.html" title="">标题标题</a></h2>
+        </header>
+        <p class="meta">
+            <time class="time"><i class="glyphicon glyphicon-time"></i> 201９-６-２ 13:13:44</time>
+            <span class="views"><i class="glyphicon glyphicon-eye-open"></i>网友３</span>
+            <p class="note"> 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+    </article>
+    <article class="excerpt excerpt-1">
+        <a class="focus" href="article.html" title=""><img class="thumb" data-original="view5.jpg" src="view5.jpg" alt=""></a>
+        <header>
+            <h2><a href="article.html" title="">标题标题</a></h2>
+        </header>
+        <p class="meta">
+            <time class="time"><i class="glyphicon glyphicon-time"></i> 201９-６-２ 13:13:44</time>
+            <span class="views"><i class="glyphicon glyphicon-eye-open"></i>网友４</span>
+            <p class="note"> 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+    </article>
+    <article class="excerpt excerpt-1">
+        <a class="focus" href="article.html" title=""><img class="thumb" data-original="view5.jpg" src="view5.jpg" alt=""></a>
+        <header>
+            <h2><a href="article.html" title="">标题标题</a></h2>
+        </header>
+        <p class="meta">
+            <time class="time"><i class="glyphicon glyphicon-time"></i> 201９-６-２ 13:13:44</time>
+            <span class="views"><i class="glyphicon glyphicon-eye-open"></i>网友５</span>
+            <p class="note"> 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+    </article>
+    <article class="excerpt excerpt-1">
+        <a class="focus" href="article.html" title=""><img class="thumb" data-original="view5.jpg" src="view5.jpg" alt=""></a>
+        <header>
+            <h2><a href="article.html" title="">标题标题</a></h2>
+        </header>
+        <p class="meta">
+            <time class="time"><i class="glyphicon glyphicon-time"></i> 201９-６-２ 13:13:44</time>
+            <span class="views"><i class="glyphicon glyphicon-eye-open"></i>网友６</span>
+            <p class="note"> 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+    </article>
+
+
+
+</body>
+
+</html>

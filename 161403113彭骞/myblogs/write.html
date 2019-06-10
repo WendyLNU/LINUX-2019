@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章撰写</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+    
+    #m {
+        width: 940px;
+        overflow: hidden;
+        padding: 30px;
+        background-color: white;
+        margin: 0 auto;
+        border-top: 2px solid #e2b709;
+        margin-top: 30px;
+    }
+    
+    #title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    #content {
+        border-left: 2px solid #e2b709;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+    
+    #txt {
+        border: 1px solid #777777;
+        padding: 20px
+    }
+</style>
+
+
+<div id="m">
+    <form action="write.php" method="post">
+        <p class="tltle"><input type="text" name="title" placeholder="请输入标题" /> </p>
+        <textarea class="txt " cols="90" rows="5" placeholder="请输入内容"></textarea>
+        <p><input type="submit" value="发布文章" onclick="article.html" /></p>
+    </form>
+</div>
