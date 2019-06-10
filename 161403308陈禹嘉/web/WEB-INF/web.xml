@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/c.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <!--编码过滤器-->
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.scoremanagementsys.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--权限过滤器-->
+    <filter>
+        <filter-name>PermissionFilter</filter-name>
+        <filter-class>com.scoremanagementsys.filter.PermissionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PermissionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--登录-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--登录-->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--获取学生成绩-->
+    <servlet>
+        <servlet-name>GetStudentScoresServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.GetStudentScoresServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetStudentScoresServlet</servlet-name>
+        <url-pattern>/getStudentScores</url-pattern>
+    </servlet-mapping>
+
+    <!--获取学生信息-->
+    <servlet>
+        <servlet-name>GetStudentsServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.GetStudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetStudentsServlet</servlet-name>
+        <url-pattern>/getStudents</url-pattern>
+    </servlet-mapping>
+
+    <!--编辑学生成绩-->
+    <servlet>
+        <servlet-name>EditScoresServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.EditScoresServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditScoresServlet</servlet-name>
+        <url-pattern>/editScores</url-pattern>
+    </servlet-mapping>
+
+    <!--编辑学生信息-->
+    <servlet>
+        <servlet-name>EditStudentInfoServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.EditStudentInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditStudentInfoServlet</servlet-name>
+        <url-pattern>/editStudentInfo</url-pattern>
+    </servlet-mapping>
+
+    <!--添加学生信息-->
+    <servlet>
+        <servlet-name>StudentAddServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.StudentAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentAddServlet</servlet-name>
+        <url-pattern>/studentAdd</url-pattern>
+    </servlet-mapping>
+
+    <!--删除学生-->
+    <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/deleteStudent</url-pattern>
+    </servlet-mapping>
+
+    <!--删除学生成绩-->
+    <servlet>
+        <servlet-name>DeleteStudentScoreServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.DeleteStudentScoreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudentScoreServlet</servlet-name>
+        <url-pattern>/deleteScores</url-pattern>
+    </servlet-mapping>
+
+    <!--保存学生所有科目成绩-->
+    <servlet>
+        <servlet-name>StudentScoresSaveServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.StudentScoresSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentScoresSaveServlet</servlet-name>
+        <url-pattern>/studentScoresSave</url-pattern>
+    </servlet-mapping>
+
+    <!--保存学生单科成绩-->
+    <servlet>
+        <servlet-name>ScoreSaveServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.ScoreSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScoreSaveServlet</servlet-name>
+        <url-pattern>/scoreSave</url-pattern>
+    </servlet-mapping>
+
+    <!--获取所有科目-->
+    <servlet>
+        <servlet-name>GetCoursesServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.GetCoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCoursesServlet</servlet-name>
+        <url-pattern>/getCourses</url-pattern>
+    </servlet-mapping>
+
+    <!--验证学生是否已存在-->
+    <servlet>
+        <servlet-name>CheckStudentServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.CheckStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckStudentServlet</servlet-name>
+        <url-pattern>/checkStudent</url-pattern>
+    </servlet-mapping>
+
+    <!--管理员修改密码-->
+    <servlet>
+        <servlet-name>AdminEditServlet</servlet-name>
+        <servlet-class>com.scoremanagementsys.servlet.AdminEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminEditServlet</servlet-name>
+        <url-pattern>/adminEdit</url-pattern>
+    </servlet-mapping>
+
+</web-app>
