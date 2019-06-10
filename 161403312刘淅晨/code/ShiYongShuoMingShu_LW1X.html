@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="zh-cn"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="zh-cn"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="zh-cn"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="zh-cn"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-cn"><!--<![endif]-->
+<head>
+ <meta charset="UTF-8">
+ <title>Php+Xls电脑网页版通用考试成绩查分系统:Linux(Utf-8)</title>
+ <meta name="Keywords" content="Php,Xls,电脑网页版,源码下载,通用,考试成绩,查分系统,Linux(Utf-8)" />
+ <meta name="Description" content="Php+Xls电脑网页版通用考试成绩查分系统:Linux(Utf-8),适合修改不频繁、保密性不高的成绩、工资、物业费、水电费等的精准查询等。" /> 
+<style type="text/css">
+/*自定义css*/
+*{margin:0;padding:0;font-family:Georgia,微软雅黑, 仿宋_GB2312, 黑体, Arial, Helvetica, sans-serif;}
+a{color:blue;text-decoration:none;margin:2px;font-size:12px;line-height:150%;}
+a:hover{color:red;}
+body{line-height:180%;}
+.table{margin:10px auto;width:90%;min-width:968px;color:black;border-bottom:1px solid #ccc;border-right:1px solid #ccc;}
+.table td{border-left:1px solid #ccc;height:32px;border-top:1px solid #ccc;padding:1px;font-size:12px;}
+.tr{text-align:center;}
+.tt{background:#eeeeee;font-weight:bold;color:#016493;font-size:28px;text-align:center;}
+.ts{padding:15px;text-align:left;}
+caption{color:blue;margin:0px;font-size:60px;line-height:100%;}
+strong{color:red;margin:2px;font-size:32px;line-height:120%;}
+.div{width:98%;padding:15px;background:#326696;border-bottom:solid 1px White;color:white;}
+.btn{display:inline-block;padding:5px 8px;border:solid 2px white;color:white;margin:4px 8px;cursor:pointer;
+ font-weight:bold;font-size:14px;text-decoration:none;}
+.btn:hover{background:white;color:#326696;}
+.title,h1{font-size:36px;line-height:180%;font-weight:bold;text-align:center;margin:2px 4px;}
+h2{font-size:24px;line-height:180%;font-weight:bold;margin:4px 8px;color:red;}
+h3{font-size:18px;line-height:150%;font-weight:bold;margin:2px 4px;color:green;}
+h4{font-size:16px;line-height:120%;margin:1px 2px;font-weight:300;color:blue;}
+.center{font-size:18px;margin:0 auto;width:100%;max-width:1000px;}
+.mf{background:white;color:#326696;display:inline-block;height:18px;line-height:18px;
+ padding:5px;margin-top:-5px;text-align:center;font-size:14px;position:absolute;border-radius:11px;margin-left:10px;}
+#menu_list {margin:0 auto;width:100%;height:36px;line-height:36px;font-size:16px;text-align:center;list-style:none;}
+#menu_list a{border:solid 1px white;background:#326696;line-height:150%;font-weight:bold;}
+#menu_list li{margin:0 0 0 2px;float:left;position:relative;z-index:1;}
+#menu_list li .title{display:block;}
+#menu_list a:hover{background:white;color:#326696;border:1px solid white;}
+#menu_list li .sub_menu{position:absolute;left:8px;top:37px;border:1px solid white;background:gray;display:none;}
+#menu_list li .sub_menu a{border:1px solid white;color:white;display:block;}
+#menu_list li .sub_menu a:hover{background:white;color:#326696;border:1px solid white;}
+.fa:hover {text-decoration:underline;}
+.fa {color:white;text-decoration:none;}
+
+</style>
+</head>
+<body>
+<table cellspacing="0" class="table"><tr><td>
+<div class="div">
+<div class="title">Php+Xls电脑网页版通用考试成绩查分系统:Linux(Utf-8)</div>
+<h3 style="font-size:24px;color:white;text-align:center;">
+适合修改不频繁、保密性不高的成绩、工资、物业费、水电费等的精准查询等。
+</h4>
+<div align="center">
+
+<ul id="menu_list" class="center">
+<li class="menu"><a href="http://add.12391.net/" class="btn">网页版查询条件直查</a>
+<dl class="sub_menu">
+<a href="http://add.12391.net/" class="btn" target="_blank">即时在线开通</a>
+<a href="http://down.12391.net/12391/" class="btn" target="_blank">视频教程</a>
+<a href="https://item.taobao.com/item.htm?id=528692002051" class="btn" target="_blank">购买源码方案</a>
+<a href="https://item.taobao.com/item.htm?id=520023732507" class="btn" target="_blank">整体解决方案</a>
+<a href="https://item.taobao.com/item.htm?id=45703415332" class="btn" target="_blank">Asp无后台版</a>
+<a href="https://item.taobao.com/item.htm?id=45808268273" class="btn" target="_blank">Php无后台版</a>
+<a href="https://item.taobao.com/item.htm?id=520167788658" class="btn" target="_blank">多选1查询版</a>
+<a href="https://item.taobao.com/item.htm?id=43263796985" class="btn" target="_blank">多级下拉版</a>
+</dl></li>
+
+<li class="menu"><a href="http://new.12391.net/" class="btn">公众号版聊天式直查</a>
+<dl class="sub_menu">
+<a href="http://new.12391.net/" class="btn" target="_blank">即时在线开通</a>
+<a href="http://down.12391.net/WeiXinAdmin/" class="btn" target="_blank">视频教程</a>
+<a href="https://item.taobao.com/item.htm?id=520496908275" class="btn" target="_blank">购买源码方案</a>
+<a href="https://item.taobao.com/item.htm?id=529624346797" class="btn" target="_blank">整体解决方案</a>
+</dl></li>
+
+<li class="menu"><a href="http://add.dbcha.com/" class="btn">网页版密码登录查询</a>
+<dl class="sub_menu">
+<a href="http://add.echafen.com/" class="btn" target="_blank">登录查询本人版</a>
+<a href="http://ada.echafen.com/" class="btn" target="_blank">登录查询大家版</a>
+<a href="http://ade.echafen.com/" class="btn" target="_blank">登录模糊查询版</a>
+<a href="http://down.12391.net/dbcha/" class="btn" target="_blank">视频教程</a>
+<a href="https://item.taobao.com/item.htm?id=43193387085" class="btn" target="_blank">购买源码方案</a>
+<a href="https://item.taobao.com/item.htm?id=528108807297" class="btn" target="_blank">整体解决方案</a>
+</dl></li>
+
+<li class="menu"><a href="http://add.96cha.com/" class="btn">公众号绑定查询高级版</a>
+<dl class="sub_menu">
+<a href="http://add.96cha.com/" class="btn" target="_blank">绑定查询自己</a>
+<a href="http://add.96cha.com/" class="btn" target="_blank">绑定公共查询</a>
+<a href="http://add.96cha.com/" class="btn" target="_blank">不绑定直接查询</a>
+<a href="https://item.taobao.com/item.htm?id=44248394675" class="btn" target="_blank">购买源码方案</a>
+<a href="https://item.taobao.com/item.htm?id=528187132312" class="btn" target="_blank">整体解决方案</a>
+</dl></li>
+
+<li class="menu"><a href="http://add.96cha.com/" class="btn">网页版模糊查询系列</a>
+<dl class="sub_menu">
+<a href="http://add.xuelikai.com:1111/" class="btn" target="_blank">单输入框多条件</a>
+<a href="http://add.xuelikai.com:1111/" class="btn" target="_blank">下拉选择多条件版</a>
+<a href="http://add.xuelikai.com:1111/" class="btn" target="_blank">多输入框多条件版</a>
+<a href="https://item.taobao.com/item.htm?id=520167788658" class="btn" target="_blank">asp模糊多选1</a>
+<a href="https://item.taobao.com/item.htm?id=540197845648" class="btn" target="_blank">php模糊多选1</a>
+</dl></li>
+
+<li class="menu"><a href="http://add.xuelikai.com:1111/" class="btn">其他实用查询系统</a>
+<dl class="sub_menu">
+<a href="http://add.mabida.cn/" class="btn" target="_blank">防伪溯源系统</a>
+<a href="http://add.mabida.cn:1111/" class="btn" target="_blank">快递发货查询</a>
+<a href="http://add.mabida.cn:3333/" class="btn" target="_blank">证书查询系统</a>
+<a href="https://item.taobao.com/item.htm?id=537645721513" class="btn" target="_blank">课表查询</a>
+<a href="https://item.taobao.com/item.htm?id=543256127409" class="btn" target="_blank">淘宝优惠券</a>
+<a href="https://item.taobao.com/item.htm?id=525228396981" class="btn" target="_blank">公众号领码</a>
+</dl></li>
+
+</ul>
+<script type="text/javascript">
+var menu_list = document.getElementById("menu_list").childNodes;
+for (var i=0;i<menu_list.length;i++)
+{
+ if (menu_list[i].className=="menu")
+ {
+  menu_list[i].onmouseover = function(){fnNav(this,"block")};
+  menu_list[i].onmouseout = function(){fnNav(this,"none")};
+ }
+}
+function fnNav(obj,flag)
+{
+ obj.getElementsByTagName("dl")[0].style.display = flag;
+}
+</script>
+
+</div>
+</div>
+</td></tr></table>
+
+<table cellspacing="0" class="table">
+<thead>
+<tr class="tr" >
+<td colspan="11"><strong>简单、灵活、易掌握；通用、易用、很实用！还免费下载！</strong></td></tr>
+
+<tr class="tt">
+<td >版本型号</td>
+<td >编程语言</td>
+<td >网页版本</td>
+<td >操作系统</td>
+<td >数据库类型</td>
+<td >数据库规模</td>
+<td >最后更新</td>
+<td >源码大小</td>
+<td >源码下载</td>
+<td >文字教程</td>
+<td >视频教程</td>
+</tr></thead>
+<tbody>
+<tr class="tr"><td scope="row">LW1X</td>
+<td>Php</td>
+<td>电脑网页版</td>
+<td>Linux(Utf-8)</td>
+<td>Xls</td>
+<td>3千*N</td>
+<td>2017/7/1 9:00:53</td>
+<td>26.52Kb</td>
+<td><a href="http://12391.net/LW1X.zip">免费下载</a></td>
+<td><a href="ShiYongShuoMingShu_LW1X.html">文字说明</a></td>
+<td><a href="http://down.12391.net/PhpXls">视频教程</a></td>
+</tr>
+
+<!--<h1>Php+Xls电脑网页版通用考试成绩查分系统:Linux(Utf-8)</h1>-->
+
+<tr class="ts">
+<td colspan="11">
+<h1>Php+Xls电脑网页版通用考试成绩查分系统:Linux(Utf-8)</h1>
+<h2>使用建议：</h2>
+<h4>直接通过FTP上传即可使用，建议先直接上传查询测试。</h4><!--admin@ewuyi.net-->
+<h4>前台访问：http://网址/目录/ (上传直接使用,无需mysql数据库等的支持)</h4><!--admin@ewuyi.net-->
+<h4>然后notepad++打开inc/conn.Php<!--admin@ewuyi.net-->查看参数与网页对应关系。</h4><!--admin@ewuyi.net-->
+<h4>然后打开默认自带的数据库对比查询结果，查看对应关系。</h4><!--admin@ewuyi.net-->
+<h4><!--LX-->xls版打开方式：可以直接双击打开,xls格式的Excel文件查看。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>使用步骤：</h2>
+<h4></h4><!--admin@ewuyi.net-->
+<h3>参数修改</h3>
+<h4><!--LX-->1.软件notepad++或记事本打开inc/conn.php修改网站标题、查询条件等参数,具体见该文件见里面文字说明。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>数据转化</h3>
+<h4><!--LX-->1.去边：留下二维表部分（留下：首行列标题，以后一行一条数据）。</h4><!--admin@ewuyi.net-->
+<h4><!--LX-->2.多行列标题的话得合并为一行; 如果有合并单元格：拆分单元格后把各单元格都填充拆分前的内容。</h4><!--admin@ewuyi.net-->
+<h4><!--LX-->3.去窘余：删除无用的表，只留一个表如sheet1。如果查询失败请尝试另存为.xls文件(excel97-2003)。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>源码上传</h3>
+<h4>1.源码的上传：保持原有结构上传到网站即可直接使用，上传请注意编码（UTF-8<!--echafen.com-->），具体可以看视频教程。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>数据上传</h3>
+<h4>1.上传方式：FTP工具上传（推荐）；远程桌面上传；在线文件管理工具管理；等。</h4><!--admin@ewuyi.net-->
+<h4>2.通过指定编码（即字符集：UTF-8<!--echafen.com-->）上传代码和数据，上传到网站数据库目录下。</h4><!--admin@ewuyi.net-->
+<h4>3.新增查询类别：新上传一个数据。注意后缀和原来的一致。查询条件要和inc/conn.Php<!--admin@ewuyi.net-->设置的一样。</h4><!--admin@ewuyi.net-->
+<h4>4.减少查询类别：请删除数据库目录下对应的文件名，</h4><!--admin@ewuyi.net-->
+<h4>5.更改查询类别：重命名相应的文件名。</h4><!--admin@ewuyi.net-->
+<h4>6.修改数据内容：上传新转的数据替换原来的同名数据。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>特别强调(即二维表规则)</h3>
+<h4>1.只支持一行列标题：即多行列标题合并为一行（相当于为每列重新这只列标题）</h4><!--admin@ewuyi.net-->
+<h4>2.不支持合并单元格：拆分单元格后把各单元格都填充拆分前的内容。</h4><!--admin@ewuyi.net-->
+<h4>3.另外：Excel和Csv版本的更全面的说明看本页结尾：二维表规范</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>视频教程参考：</h3>
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>经验技巧：</h2>
+<h4>1. 查询条件设置建议使用姓名/学号/准考证/身份证/工号等,不建议用班级等可能有多种输入的内容。</h4><!--admin@ewuyi.net-->
+<h4>2. 程序中可能有不是你们的网址，你记事本打开对应文件替换为你自己的网址即可。如果没有把握就不要修改。</h4><!--admin@ewuyi.net-->
+<h4>3. 提醒：可以设置密码，但不可在线修改；可以使用身份证，但请注意大小写（比如数据统一为大写,那么输入页面说明下）。</h4><!--admin@ewuyi.net-->
+<h4>4. 程序本身不限制记录数量,但多了影响速度；建议保持每个数据库文件几千条以内，多了可以分类分库：分几个数据库放。</h4><!--admin@ewuyi.net-->
+<h4>5. Excel几乎都你自定义（只要是二维表），你也可以右键->Excel打开查看Excel模板（不可直接保存，需按照我提供的方法）</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>异常排除：</h2>
+<h4>如果出现错误，请先检查设置的查询条件是否一致，检查单元格是否包含回车换行和制表符TAB；</h4><!--admin@ewuyi.net-->
+<h4>1. 替换方法有多个,可以自行百度：Excel替换回车换行,Excel替换制表符Tab 参考更多经验。</h4><!--admin@ewuyi.net-->
+<h4>2. 直接替换法1：Excel回车替换Ctrl+H--->查找内容处输入--->按住Alt+小键盘1+小键盘0--->全部替换--->保存。</h4><!--admin@ewuyi.net-->
+<h4>3. 直接替换制表符：Excel回车替换制表符--->复制包含制表符列--->粘贴到记事本--->替换制表符--->复制记事本内容粘贴回EXCEL列。</h4><!--admin@ewuyi.net-->
+<h4>4. Excel替换完成后，按照4-6步骤重新转化Excel后上传替换。是编辑excel后重新转一次，而不是在TXT基础上修改。</h4><!--admin@ewuyi.net-->
+<h4>5. 替换回车和制表符方法可能会很多，有些直接替换，有些用公式，WPS替换"^p"等。具体你可以百度下其他方法。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>使用用途：</h2>
+<h4>适合修改不频繁、保密性不高的成绩、工资、物业水电费等各种精准查询。</h4><!--admin@ewuyi.net-->
+<h4>1. 成绩查询系统,每个学校,教育机构,事业单位考试等都可以用到</h4><!--admin@ewuyi.net-->
+<h4>2. 工资查询系统,每个学校,教育机构,事业单位考试等都可以用到</h4><!--admin@ewuyi.net-->
+<h4>3. 物业费查询系统,每个企业,学校,所有单位都可能用到</h4><!--admin@ewuyi.net-->
+<h4>4. 水电费查询系统,小区,物业公司,大学寝室等</h4><!--admin@ewuyi.net-->
+<h4>5. 其他如分班查询,录取查询,证书查询等修改不多的各种查询系统</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>特色优势</h2>
+<h4>1. 非常通用：几乎通用于所有二维表，可以满足你的大部分需求。</h4><!--admin@ewuyi.net-->
+<h4>2. 简单方便：代码小巧简单，可以快速修改以适合多表联查等各种场景</h4><!--admin@ewuyi.net-->
+<h4>3. 灵活易用：只需修改几个参数即可私人定制查询。</h4><!--admin@ewuyi.net-->
+<h4>4. 快速使用：发布一次成绩最快两三分钟可解决。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>局限性说明</h2>
+<h4>1. 修改越频繁越不适合(成绩、工资、水电费等一般都一次性出来不修改)</h4><!--admin@ewuyi.net-->
+<h4>2. 只适合二维表(一般数据库都采用二维结构,首行列标题,以后一行一条数据)</h4><!--admin@ewuyi.net-->
+<h4>3. 不限制单库记录数。建议单库控制在3千<!--12391.net-->条以内（可分库，各库互不影响）</h4><!--admin@ewuyi.net-->
+<h4>4. 暂不支持公式、图片、网址。可付费定制。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>推荐1：即时开通免费查询：</h2>
+<h4>无需域名 无需空间 无需代码 无需技术人员 无需备案 即开即用</h4><!--admin@ewuyi.net-->
+<h4>开通后会将网址、用户名、密码以及使用教程发送到你留的邮箱。</h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★1. 通用查询网页直查版(1-3查询条件版)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.12391.net/' >http://add.12391.net/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★2. 通用查询公众号多选一直查版(聊天式)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://new.12391.net/' >http://new.12391.net/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★3. 通用查询公众号绑定查己版(聊天式)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.96cha.com/' >http://add.96cha.com/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★4. 通用查询登录精准查询本人版(可自助改密)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.dbcha.com/' >http://add.dbcha.com/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★5. 通用查询登录精准查询公共版(可自助改密)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://ada.echafen.com/' >http://ada.echafen.com/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★6. 通用查询登录模糊搜索公共版(可自助改密)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://ade.echafen.com/' >http://ade.echafen.com/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★7. 通用查询模糊搜索公共版(多查询模式合一)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.xuelikai.com:1111/' >http://add.xuelikai.com:1111/</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★8. 通用防伪溯源查询系统(网页+扫码+公众号)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.mabida.cn/' >http://add.mabida.cn/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★9. 通用发货查询系统(网页+公众号)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.mabida.cn:1111/' >http://add.mabida.cn:1111/</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★10. 通用进度查询系统(网页+公众号)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.mabida.cn:2222/' >http://add.mabida.cn:2222/</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★11. 通用证书查询系统(网页+公众号)</h3><!--powered by 12391.net-->
+<h4>免费自助开通：<a target=_blank href='http://add.mabida.cn:3333/' >http://add.mabida.cn:3333/</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h2>推荐2：更多建议优质服务</h2>
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★1. 需要本系列更多(60+个版本)版本（有技术指导等）</h3><!--powered by 12391.net-->
+<h4>Asp版 <a target=_blank href='https://item.taobao.com/item.htm?id=45703415332' >https://item.taobao.com/item.htm?id=45703415332</a>  </h4><!--admin@ewuyi.net-->
+<h4>Php版 <a target=_blank href='https://item.taobao.com/item.htm?id=45808268273' >https://item.taobao.com/item.htm?id=45808268273</a>  </h4><!--admin@ewuyi.net-->
+<h4>多选1版 <a target=_blank href='https://item.taobao.com/item.htm?id=520167788658' >https://item.taobao.com/item.htm?id=520167788658</a> </h4><!--admin@ewuyi.net-->
+<h4>多级下拉版 <a target=_blank href='https://item.taobao.com/item.htm?id=43263796985' >https://item.taobao.com/item.htm?id=43263796985</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★2. 该系列均通过FTP工具或远程桌面管理，如需在线版后台功能</h3><!--powered by 12391.net-->
+<h4>网页直查版(按时间)： <a target=_blank href='https://item.taobao.com/item.htm?id=520023732507' >https://item.taobao.com/item.htm?id=520023732507</a> </h4><!--admin@ewuyi.net-->
+<h4>网页直查版(源码版)： <a target=_blank href='https://item.taobao.com/item.htm?id=528692002051' >https://item.taobao.com/item.htm?id=528692002051</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★3. 如果对保密性要求较高,且自己没有技术员或无域名、空间等：</h3><!--powered by 12391.net-->
+<h4>绑定查询本人版(按时间)：<a target=_blank href='https://item.taobao.com/item.htm?id=44248394675' >https://item.taobao.com/item.htm?id=44248394675</a>  </h4><!--admin@ewuyi.net-->
+<h4>密码登录查询版(按时间)：<a target=_blank href='https://item.taobao.com/item.htm?id=43193387085' >https://item.taobao.com/item.htm?id=43193387085</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★4. 如果对保密性要求特高,且有自己技术员、空间、域名等：</h3><!--powered by 12391.net-->
+<h4>绑定查询本人版(源码版)：<a target=_blank href='https://item.taobao.com/item.htm?id=44248394675' >https://item.taobao.com/item.htm?id=44248394675</a> </h4><!--admin@ewuyi.net-->
+<h4>密码登录查询版(源码版)：<a target=_blank href='https://item.taobao.com/item.htm?id=43193387085' >https://item.taobao.com/item.htm?id=43193387085</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★5. 查询条件直查公众号版(无需登录直接发送指定查询条件查询)：</h3><!--powered by 12391.net-->
+<h4>公众号直查版(按时间)： <a target=_blank href='https://item.taobao.com/item.htm?id=529624346797' >https://item.taobao.com/item.htm?id=529624346797</a>  </h4><!--admin@ewuyi.net-->
+<h4>公众号直查版(源码版)： <a target=_blank href='https://item.taobao.com/item.htm?id=520496908275' >https://item.taobao.com/item.htm?id=520496908275</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★6. 本查询只能精准查询自己本人数据，如需如需免密码模糊查询：</h3><!--powered by 12391.net-->
+<h4>免密码模糊查询： <a target=_blank href='https://item.taobao.com/item.htm?id=520167788658' >https://item.taobao.com/item.htm?id=520167788658</a>  </h4><!--admin@ewuyi.net-->
+<h4>模糊查询php版1： <a target=_blank href='https://item.taobao.com/item.htm?id=543256127409' >https://item.taobao.com/item.htm?id=543256127409</a>  </h4><!--admin@ewuyi.net-->
+<h4>模糊查询php版2： <a target=_blank href='https://item.taobao.com/item.htm?id=540197845648' >https://item.taobao.com/item.htm?id=540197845648</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★7. 如需快递发货查询系统（含公众号查询），方便用户快速查询物流信息：</h3><!--powered by 12391.net-->
+<h4>按时间付费：<a target=_blank href='https://item.taobao.com/item.htm?id=543880972347' >https://item.taobao.com/item.htm?id=543880972347</a>  </h4><!--admin@ewuyi.net-->
+<h4>源代码购买：<a target=_blank href='https://item.taobao.com/item.htm?id=543880972347' >https://item.taobao.com/item.htm?id=543880972347</a>  </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★8. 如需防伪溯源查询系统(扫码直达+网页查询+公众号回复查询)：</h3><!--powered by 12391.net-->
+<h4>源代码购买：<a target=_blank href='https://item.taobao.com/item.htm?id=43525422046' >https://item.taobao.com/item.htm?id=43525422046</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★9. php+excel课表查询系统、政务信息公开系统等直接显示Excel内容</h3><!--powered by 12391.net-->
+<h4>源代码购买：<a target=_blank href='https://item.taobao.com/item.htm?id=537645721513' >https://item.taobao.com/item.htm?id=537645721513</a> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3>★10. 公众号随机领取信息系统：随机发码、分班、抽奖等功能可用</h3><!--powered by 12391.net-->
+<h4>源代码购买：<a target=_blank href='https://item.taobao.com/item.htm?id=525228396981' >https://item.taobao.com/item.htm?id=525228396981</a></h4><!--admin@ewuyi.net-->
+<h4> </h4><!--admin@ewuyi.net-->
+<h4></h4><!--admin@ewuyi.net-->
+<h3><h2>★附：二维表规范(自助检查步骤)：</h2></h3><!--powered by 12391.net-->
+<h4>1. 有且只有第一行为列标题（也就是字段）；多行列标题请先合并。</h4><!--admin@ewuyi.net-->
+<h4>2. 你上传的数据首行字段得包含作为查询条件的列(且等于设置的查询条件)。</h4><!--admin@ewuyi.net-->
+<h4>经验技巧：姓名,学号,工号,准考证号,证书编号等适合作为查询条件；班级,地址等有多种输入的不适合作为查询条件。</h4><!--admin@ewuyi.net-->
+<h4>3. 请删除：删除非二维表的内容（只留下有内容的矩形区域）。</h4><!--admin@ewuyi.net-->
+<h4>比如二维表后面（右侧）有空列，则查询结果会多出显示“-”的项目，可在表格删除对应空列后重新提交；</h4><!--admin@ewuyi.net-->
+<h4>比如二维表下面（底下）有空行，如有空行太多会影响程序速度。可在表格删除对应空行后重新提交。</h4><!--admin@ewuyi.net-->
+<h4>4. 第二行开始每行一条数据且每列内容同（比如姓名、学号列下整列都是姓名、学号）则有效,不然显示结果错乱。</h4><!--admin@ewuyi.net-->
+<h4>5. 作为查询条件的列建议统一英文的大小写,比如身份证尾号X的大小写等,然后【系统设置】页面的备注说明下。</h4><!--admin@ewuyi.net-->
+<h4>不建议包含特殊符号的列作为查询条件，因为特殊符号往往会被转义(比如空格会被变成 ),空格的话可以先替换掉。</h4><!--admin@ewuyi.net-->
+<h4>6. 如果二维表表格存在回车或制表符，请先替换，具体看视频教程。 </h4><!--admin@ewuyi.net-->
+</td>
+</tr>
+
+
+
+</tbody></table>
+
+<table cellspacing="0" class="table">
+<tr class="tr"><td>
+ Copyright&#169;2016  <a href="http://www.12391.net/"  target="_blank"> 12391.net</a>
+ </td></tr></table>
+</body>
+</html>
