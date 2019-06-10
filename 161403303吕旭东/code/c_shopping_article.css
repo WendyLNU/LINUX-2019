@@ -1,0 +1,66 @@
+.sho_article_m{
+  width: 85%;
+  position: relative;
+  left: 50%;
+  margin-left: -45%;
+  top: 50px;
+  overflow-x: hidden;
+}
+.sho_art_logo{
+  width: 300px;
+  height: 350px;
+  border: 1px solid #000;
+  left: 80px;
+  position: relative;
+}
+
+.sho_article_m p{
+  position: relative;
+  left: 50%;
+  top: -340px;
+  font-family: sans-serif;
+  font-size: 14px;
+  opacity: .4;
+}
+.sho_article_m input,.sho_article_m select{
+  position: relative;
+  font-size: 20px;
+  width: 130px;
+  height: 30px;
+  left: 58%;
+  top: -363px;
+  border: 0;
+  background: rgba(0,0,0,0);
+}
+
+
+#logged{
+  width: 68%;
+  height: 400px;
+  left: 80px;
+  top: -170px;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.4);
+}
+#logged #log_head{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+}
+#logged #log_head .nav{
+  width: 80px;
+  height: 20px;
+  border-left: 1px solid #000000;
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+#logged #tad-content p{
+  left: 30px;
+  top: 20px;
+  line-height: 40px;
+}
