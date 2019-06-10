@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  ConsoleApplication11.cpp
+c:\users\ledig leo\documents\visual studio 2015\projects\栈做计算器\consoleapplication11\consoleapplication11.cpp(29): warning C4715: “priority”: 不是所有的控件路径都返回值
+c:\users\ledig leo\documents\visual studio 2015\projects\栈做计算器\consoleapplication11\consoleapplication11.cpp(106): warning C4715: “calculate”: 不是所有的控件路径都返回值
+  ConsoleApplication11.vcxproj -> C:\Users\Ledig Leo\Documents\Visual Studio 2015\Projects\栈做计算器\Debug\ConsoleApplication11.exe
+  ConsoleApplication11.vcxproj -> C:\Users\Ledig Leo\Documents\Visual Studio 2015\Projects\栈做计算器\Debug\ConsoleApplication11.pdb (Full PDB)
