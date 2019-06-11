@@ -37,6 +37,8 @@ npm install -g hexo-cli
 - 将hexo部署到GitHub
 
 # **效果展示**
+## **[博客地址](https://cyj1871737194.github.io/)**
+
 ![](./img/img1.png)
 ![](./img/img2.png)
 
