@@ -1,0 +1,32 @@
+<import src="/dist/loadmore/index.wxml" />
+<import src="/dist/tab/index.wxml" />
+<import src="/common/copyright/copyright" />
+
+<view class="container">
+
+  <image class="banner" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497935468391&di=9bb7eeebdd18eb3379f67d9e0f811bf2&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015a645798da570000018c1bbb9eab.jpg"></image>
+
+  <template is="zan-loadmore" data="{{loading: isLoading}}" />
+
+  <view class="tab-wrap" wx:if="{{!isLoading}}">
+    <template is="zan-tab" data="{{tab: indexTab, componentId: 'indexTab'}}"></template>
+  </view>
+
+  <view class="list">
+    <view class="goods-wrap" wx:if="{{!isLoading}}" wx:key="" wx:for="{{goodData.goods}}" bindtap="tapGood" data-gid="{{goodData.goods[index].gid}}">
+      <image class="goods-img" src="{{goodData.goods[index].pic}}"></image>
+      <view class="text">
+        <view class="title">
+          <text>{{goodData.goods[index].name}}</text>
+        </view>
+        <view class="price">
+          <text class="new">￥{{goodData.goods[index].currentPrice}}</text>
+          <text class="old">￥{{goodData.goods[index].originalPrice}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <template is="copyright"/>
+
+</view>

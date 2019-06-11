@@ -1,0 +1,70 @@
+<import src="../../dist/quantity/index.wxml" />
+<import src="/dist/toast/index.wxml" />
+<import src="/dist/loadmore/index.wxml" />
+
+<view class="container empty" wx:if="{{empty}}" style="z-index: 9;">
+  <view class="empty-text">购物车为空，快到商城挑选一些商品吧！</view>
+  <button class="weui-btn mini-btn empty-btn" size="mini" bindtap="goIndex">立即前往挑选</button>
+</view>
+
+<view wx:if="{{!empty}}">
+  <view class="container hasgoods">
+    <view class="weui-cell" style="background-color:#fff;padding-left:5px;">
+      <view class="weui-cell__hd" style="width:100%;">
+        <checkbox-group bindchange="checkAll" class="check-all">
+          <label>
+            <checkbox value="checkAll" checked="{{checkAll}}" style="position:absolute;left:-9999px;" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+              <icon class="weui-icon-checkbox_circle" type="circle" size="28" hidden="{{checkAll}}"></icon>
+              <icon class="my-checkall iconfont icon-check" hidden="{{!checkAll}}"></icon>
+            </view>
+          </label>
+        </checkbox-group>
+        <view class="zan-ellipsis top-title" bindtap="goIndex">天天蛋糕店</view>
+        <button class="weui-btn mini-btn" size="mini" bindtap="toggleEdit" style="float:right;color:#f44;margin:0;">
+          <text hidden="{{isEdit}}">编辑</text>
+          <text hidden="{{!isEdit}}">完成</text>
+        </button>
+      </view>
+    </view>
+
+    <template is="zan-loadmore" data="{{loading: isLoading}}" />
+
+    <view wx:if="{{!isLoading}}" class="weui-cells weui-cells_after-title">
+      <checkbox-group bindchange="checkboxChange">
+        <view class="good-item weui-cell" wx:for="{{checkboxItems}}" wx:key="value">
+          <label>
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+              <icon class="weui-icon-checkbox_circle" type="circle" size="28" hidden="{{item.checked}}"></icon>
+              <icon class="my-check iconfont icon-check" hidden="{{!item.checked}}"></icon>
+            </view>
+          </label>
+          <view class="good-info weui-cell__bd">
+            <image class="good-img" src="{{checkboxItems[index].pic}}"></image>
+            <view class="zan-ellipsis" style="max-width:450rpx;font-size:14px;">{{checkboxItems[index].name}}</view>
+            <view class="zan-ellipsis" style="max-width:420rpx;color:#999;margin:5rpx 0 15rpx 0;">{{checkboxItems[index].kindName}}</view>
+            <view wx:if="{{!isEdit}}" class="good-bot">
+              <view class="price">￥{{checkboxItems[index].price}}</view>
+              <view class="count">x{{checkboxItems[index].count}}</view>
+            </view>
+            <view wx:if="{{isEdit}}" style="width:100%;">
+              <template is="zan-quantity" data="{{ ...checkboxItems[index].quantity, componentId: 'checkboxItems['+index+'].quantity', size: 'small' }}" />
+              <button class="del-btn" bindtap="delGood" data-gid="{{checkboxItems[index].gid}}" data-kid="{{checkboxItems[index].kid}}">删除</button>
+            </view>
+          </view>
+        </view>
+      </checkbox-group>
+    </view>
+
+  </view>
+
+  <view class="cart-bot">
+    <view class="total">合计：
+      <text style="color:#f44;font-size:14px;">￥{{total}}</text>
+    </view>
+    <view class="clearing {{unable}}" bindtap="goConfirm">结算</view>
+  </view>
+</view>
+
+<template is="zan-toast" data="{{ zanToast }}"></template>

@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/detail/detail",
+    "example/dashboard/index",
+    "pages/types/types",
+    "pages/mine/mine",
+    "pages/order/order",
+    "example/btn/index",
+    "example/badge/index",
+    "example/cell/index",
+    "example/label/index",
+    "example/loadmore/index",
+    "example/panel/index",
+    "example/tab/index",
+    "example/quantity/index",
+    "example/toptips/index",
+    "example/helper/index",
+    "example/form/index",
+    "example/steps/index",
+    "example/switch/index",
+    "example/card/index",
+    "example/dialog/index",
+    "example/icon/index",
+    "example/toast/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FAFAFA",
+    "navigationBarTitleText": "demo",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f9f9f9"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#ff4343",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-active.png"
+      },
+      {
+        "pagePath": "pages/types/types",
+        "text": "分类",
+        "iconPath": "images/type.png",
+        "selectedIconPath": "images/type-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-active.png"
+      }
+    ]
+  }
+}

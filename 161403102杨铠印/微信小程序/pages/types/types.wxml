@@ -1,0 +1,32 @@
+<import src="/dist/loadmore/index.wxml" />
+
+<template is="zan-loadmore" data="{{loading: isLoading}}" />
+
+<view wx:if="{{!isLoading}}">
+  <scroll-view class="types" scroll-y="true" style="height:{{scrollHeight}}px;">
+    <view wx:key="" wx:for="{{typeData}}" class="type {{current == typeData[index].tid ? 'active' : ''}}" bindtap="tapTpye" data-current="{{typeData[index].tid}}">
+      <view class="border"></view>
+      <text>{{typeData[index].name}}</text>
+    </view>
+  </scroll-view>
+
+  <view class="container">
+
+    <view class="list">
+      <view class="goods-wrap" wx:key="" wx:for="{{goodData.goods}}" bindtap="tapGood" data-gid="{{goodData.goods[index].gid}}">
+        <image class="goods-img" src="{{goodData.goods[index].pic}}"></image>
+        <view class="text">
+          <view class="title">
+            <text>{{goodData.goods[index].name}}</text>
+          </view>
+          <view class="price">
+            <text class="new">￥{{goodData.goods[index].currentPrice}}</text>
+            <text class="old">￥{{goodData.goods[index].originalPrice}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
