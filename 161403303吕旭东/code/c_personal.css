@@ -1,0 +1,87 @@
+*{padding: 0;margin: 0}
+
+#personal_left{
+  width: 130px;
+  height: 550px;
+  border-width: 0 3px 0 0;
+  border-style: solid;
+  border-color: black;
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.personal_v{
+  top:50px;
+  position: relative;
+  width: 120px;
+  height: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+.personal_v:hover{
+  color: blue;
+  opacity: .7;
+}
+
+.personal_m{
+  top: -10px;
+  left: 200px;
+  width: 75%;
+  position: relative;
+  display: block;
+  padding: 20px 0 30px 50px;
+  float: left;
+  border: 1px solid rgba(0,0,0,.4);
+}
+.personal_m p{
+  font-family: sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+}
+.per_safe_divs{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000000;
+  float: left;
+  margin: 10px 10px 30px 10px;
+  display: block;
+  position: relative;
+  transition: all .5s;
+  border-radius: 10px;
+}
+.per_safe_divs .per_safe_divs_t{
+  text-align: center;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+.per_safe_divs:hover{
+  background: black;
+  opacity: .7;
+}
+.per_safe_divs:hover .per_safe_divs_t{
+  color: white;
+}
+.scrolling{
+  color: #a016ff;
+}
+
+.per_main_area{
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0,0,0,.4);
+  position: relative;
+  left: 50px;
+}

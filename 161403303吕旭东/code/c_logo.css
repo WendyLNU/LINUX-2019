@@ -1,0 +1,96 @@
+*{padding: 0;margin: 0}
+.logo{
+  width: 200px;
+  height: 500px;
+  position: fixed;
+}
+.logimg{
+  width: 120px;
+  height: 100px;
+  background: url("src/logo.png");
+  position: absolute;
+  left:10px;
+  top: 150px;
+}
+.logimg ul{
+  position: relative;
+  left: 120px;
+  top: 0;
+  list-style: none;
+}
+.logimg ul li a{
+  text-decoration: none;
+  display: none;
+  list-style: none;
+  width: 100px;
+  height: 15px;
+  background: rgba(0,0,0,.4);
+  border-width: 0 0 0 5px;
+  border-style: solid;
+  border-color: black;
+  margin: 3px;
+  text-align: center;
+  padding: 2px 0 8px 0;
+  color: white;
+  font-family: sans-serif;
+  font-weight: initial;
+  font-size: 18px;
+}
+<!--弹出动画-->
+@-webkit-keyframes move {
+  from{
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes move {
+  from{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.logimg:hover ul .c1{
+  -webkit-animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  -webkit-animation-delay:  0s;
+  animation-delay:  0s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode: both;
+}
+.logimg:hover ul .c2{
+  -webkit-animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  -webkit-animation-delay:  .3s;
+  animation-delay:  .1s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode: both;
+}
+.logimg:hover ul .c3{
+  -webkit-animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  -webkit-animation-delay:  .3s;
+  animation-delay:  .2s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode: both;
+}
+.logimg:hover ul .c4{
+  -webkit-animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  animation: move .7s cubic-bezier(.62,-0.91,.45,1.97);
+  -webkit-animation-delay:  .3s;
+  animation-delay:  .3s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode: both;
+}
+.logimg:hover ul li a{
+  display: block;
+}
+
