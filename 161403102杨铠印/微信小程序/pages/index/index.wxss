@@ -1,0 +1,72 @@
+.banner {
+  display: block;
+  width: 100%;
+  height: 350rpx;
+}
+
+.tab-wrap view {
+  font-size: 12px;
+}
+
+.zan-tab {
+  height: 40px;
+}
+
+.zan-tab__title {
+  height: 40px;
+  line-height: 40px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5px 5px;
+}
+
+.goods-wrap {
+  width: 50%;
+  padding: 8px 5px;
+}
+
+.goods-img {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10px;
+}
+
+.text {
+  width: 100%;
+}
+
+.title {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 2px 0;
+}
+
+.price {
+  width: 100%;
+}
+
+.price > text {
+  font-size: 14px;
+}
+.price .new {
+  font-weight: bold;
+  color: #f44;
+  margin-right: 5px;
+}
+.price .old {
+  color: #666;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+scroll-view {
+  height: 100%;
+}
