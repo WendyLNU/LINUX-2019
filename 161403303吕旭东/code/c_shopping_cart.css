@@ -1,0 +1,60 @@
+.shopping_left{
+  width: 350px;
+  height: 500px;
+  position: fixed;
+  left: 50px;
+  top: 80px;
+}
+.shopping_main{
+  width: 800px;
+  height: 500px;
+  position: relative;
+  left: 500px;
+  top: 60px;
+}
+.shopping_main h1{
+  width: 100%;
+  text-align: center;
+}
+
+.shopping_main p{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+}
+
+table{
+  width: 600px;
+}
+tr{
+  margin: 5px 10px;
+  display: block;
+}
+
+.sel_1{
+  width: 80%;
+}
+table tr td a{
+  color: black;
+  text-decoration: none;
+}
+table tr td a:hover{
+  color: #888888;
+}
+
+.sel_2{
+  font-weight: initial;
+  font-size: 15px;
+  position: relative;
+  top: -25px;
+  left: 20px;
+}
+select{
+  position: relative;
+  top: -25px;
+}
+.button{
+  top: 20px;
+  left: -70px;
+  position: relative;
+}

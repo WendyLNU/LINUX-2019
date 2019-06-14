@@ -1,0 +1,30 @@
+.bottom_m{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: black;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+}
+.bottom_m pre{
+  padding-left: 20px;
+  padding-top: 10px;
+  color: rgba(255,255,255,.5);
+  font-weight: initial;
+  font-size: 12px;
+  font-family: sans-serif;
+  line-height: 18px;
+}
+.bottom_m pre a{
+  color: rgba(255,255,255,.5);
+  font-weight: initial;
+  font-size: 12px;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom_m pre a:hover{
+  color: white;
+}
