@@ -1,0 +1,93 @@
+/**index.wxss，@作者：戚子强**/
+
+.authorview {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.authorbutton {
+  background-color: #32cd32;
+}
+
+.authortext {
+  font-weight: 100;
+  font-size: 20rpx;
+}
+
+.bodyall {
+  display: flex;
+}
+
+.toptipsbar {
+  background-color: #fc0;
+  text-align: center;
+  font-size: 30rpx;
+  display: none;
+}
+
+.lotterybody {
+  width: 100%;
+}
+
+.prizesummary {
+  width: 100%;
+  height: 1300rpx;
+}
+
+.divLine1 {
+  background: #e0e3da;
+  width: 100%;
+  height: 1rpx;
+}
+
+.divLine10 {
+  background: #e0e3da;
+  width: 100%;
+  height: 15rpx;
+}
+
+.prizecondition {
+  font-weight: 300;
+  font-size: 30rpx;
+}
+
+.sponsor {
+  font-weight: 300;
+  font-size: 30rpx;
+}
+
+.line {
+  width: 80%;
+  height: 7rpx;
+  background-color: gainsboro;
+}
+
+.prizedetail {
+  font-size: 30rpx;
+}
+
+.thisimage {
+  width: 750rpx;
+}
+
+text {
+  word-break: break-all;
+}
+
+.ad {
+  text-align: center;
+}
+
+.myvideo {
+  width: 100%;
+  height: 1300rpx;
+}
+
+.btext{
+  font-weight: bold
+}

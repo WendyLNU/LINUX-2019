@@ -1,0 +1,16 @@
+/* pages/me/me.wxss */
+.placeholder{
+  color:black;
+  font-size:30rpx;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.page__title{
+font-size:50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

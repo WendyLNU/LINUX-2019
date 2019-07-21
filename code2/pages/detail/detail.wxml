@@ -1,0 +1,57 @@
+<!--V1.0, 小视频样式, @作者：戚子强-->
+
+<!--获取权限-->
+<view class='authorview' wx:if="{{!hasUserInfo && canIUse}}">
+  <button class='authorbutton' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权后继续 </button>
+  <text class='authortext'>\n这将不会泄露您的隐私信息，请放心使用\n</text>
+</view>
+
+<!--正式页面-->
+<view wx:else>
+  <!--顶部提示栏开始，尚未完成-->
+  <!--顶部提示栏结束-->
+  <!--图文展示开始-->
+  <view class='prizesummary' style='{{pagetextcontrol}}'>
+    <view class='thisimage'>
+      <image src='{{imgurl}}' style='width:750rpx' mode='widthFix'></image>
+    </view>
+    <view>
+      <text>活动名：{{lotteryname}}</text>
+    </view>
+    <view>
+      <text>奖品：{{prizename}}</text>
+    </view>
+    <view class='prizecondition'>
+    <text class='btext'>所需乐币：</text>
+      <text>{{coin}}\n</text>
+      <text class='btext'>奖品个数：</text>
+      <text>{{winnernum}}\n</text>
+      <text class='btext'>开奖条件：</text>
+      <text>{{cond}}\n</text>
+    </view>
+    <view class='sponsor'>
+      <text class='btext'>赞助：</text>
+      <text>{{sponsor}}\n</text>
+    </view>
+    <view class="line"></view>
+    <view class='prizedetail'>
+      <text>\n奖品及赞助简介：\n{{introduce}}\n</text>
+      <text>\n注意事项：若您未能抽得此奖，系统会从公共奖品池随机选奖给您；开奖后系统会通过微信通知您，请注意查收。\n</text>
+    </view>
+    <view class='ad'>
+      <text>\n</text>
+    </view>
+    <view>
+      <form bindsubmit='joinlottery' report-submit='true'>
+        <button type='primary' form-type="submit" disabled='{{isdisable}}'>
+          {{joinbuttontext}}
+        </button>
+      </form>
+      <text>\n</text>
+      <view style='display:{{candel}}'>
+       <button type='warn' bindtap='dellottery'>删除活动</button>
+      </view>
+    </view>
+  </view>
+  <!--图文展示结束-->
+</view>

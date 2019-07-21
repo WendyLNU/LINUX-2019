@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <image src="none.jpg" hidden="{{ongoing!=0}}">
+          </image>
+          <view hidden="{{ongoing==0}}">
+            <view class="weui-panel weui-panel_access">
+              <block wx:for="{{lotterynamelist}}" wx:key="index">
+                <navigator url="../detail/detail?id={{lotteryidlist[index]}}" class="weui-media-box weui-media-box_text">
+                  <view class="weui-media-box__title weui-media-box__title_in-text">{{item}}</view>
+                </navigator>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+        <image src="none.jpg" hidden="{{done!=0}}">
+          </image>
+          <view hidden="{{done==0}}">
+            <view class="weui-panel weui-panel_access">
+              <block wx:for="{{lotterynamelistnone}}" wx:key="index">
+                 <navigator url="../detail/detail?id={{lotteryidlistnone[index]}}" class="weui-media-box weui-media-box_text">
+                  <view class="weui-media-box__title weui-media-box__title_in-text">{{item}}</view>
+                </navigator>
+              </block>
+            </view>
+          </view>
+        
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

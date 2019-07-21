@@ -1,0 +1,227 @@
+<!--pages/manage/manage.wxml-->
+<!--
+ author：_Ragnarok
+ time:2019/4/1/19:48
+-->
+<!--发布抽奖界面-->
+<view class="page">
+  <!-------------------------------
+  <view class="page__hd">
+        <view class="page__title">发起抽奖</view>
+        <view class="page__desc">表单输入</view>
+  </view>
+------------------------------->
+  <view class="weui__bd">
+    <form bindsubmit='getform' bindreset="formReset">
+      <!------------------------------->
+      <view class="weui-cells__title">点击下方预览选头部图(可点击重复更改)：</view>
+      <view class="qpiccon">
+        <image class='qpic' src='{{imgurl}}' bindtap='chooseimg'></image>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">请输入活动标题：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input name="lotteryname" class="weui-input" placeholder="请输入标题(必填)" />
+          </view>
+        </view>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">请输入活动描述：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea name="introduce" class="weui-textarea" placeholder="请输入文本(可选)" style="height: 3.3em" />
+            <view class="weui-textarea-counter">0/200</view>
+          </view>
+        </view>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">请输入奖品名称：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">奖品名称</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input name="prizename" class="weui-input" placeholder="必填" />
+          </view>
+        </view>
+      </view>
+      <view class="weui-cells__title">请输入奖品数量：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">奖品数量</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type='number' name="prizenum" class="weui-input" placeholder="不填默认为1" />
+          </view>
+        </view>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">请输入赞助人/商名称：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">赞助人/商</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input name="sponsor" class="weui-input" placeholder="不填默认微信昵称" />
+          </view>
+        </view>
+      </view>
+      <!------------------------------->
+      <!--
+      <view class="weui-cells__title">开始时间：</view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{dateStart}}" start="2019-04-01" end="2050-12-31" bindchange="bindStartDateChange">
+            <view class="weui-input">{{dateStart}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">时间</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="time" value="{{timeStart}}" start="00:00" end="23:59" bindchange="bindStartTimeChange">
+            <view class="weui-input">{{timeStart}}</view>
+          </picker>
+        </view>
+      </view>
+      -->
+      <!------------------------------->
+      <view class="weui-cells__title">最早开奖时间：</view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{dateEnd}}" start="2019-04-01" end="2050-12-31" bindchange="bindEndDateChange">
+            <view class="weui-input">{{dateEnd}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">时间</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="time" value="{{timeEnd}}" start="00:00" end="23:59" bindchange="bindEndTimeChange">
+            <view class="weui-input">{{timeEnd}}</view>
+          </picker>
+        </view>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">请输入至少参与的人数(达到此人数才开奖)：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">人数</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type='number' name="maxnum" class="weui-input" placeholder="不填默认为1" />
+          </view>
+        </view>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">请输入参加抽奖需要的乐币数量：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">乐币</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type='number' name="coin" class="weui-input" placeholder="不填默认为0" />
+          </view>
+        </view>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">是否展示（选隐藏则他人只能通过您的二维码参与，不再首页展示）：</view>
+      <view class="weui-btn-area">
+        <picker bindchange="bindPassChange" value="{passindex}}" range="{{passList}}">
+          <view class="picker">
+            当前选择：{{passList[passindex]}}
+          </view>
+        </picker>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">奖品分类：</view>
+      <view class="weui-btn-area">
+        <picker bindchange="bindClassChange" value="{{menuindex}}" range="{{menuList}}">
+          <view class="picker">
+            当前选择：{{menuList[menuindex]}}
+          </view>
+        </picker>
+      </view>
+      <!------------------------------->
+      <view class="weui-cells__title">此活动展示区(建议按宽高比，litter接近2:1,medium接近1:1,big接近9:16)：</view>
+      <view class="weui-btn-area">
+        <picker bindchange="bindModeChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            当前选择：{{array[index]}}
+          </view>
+        </picker>
+      </view>
+
+      <!-------------------------------
+    <view class="weui-cells__title">联系方式</view>
+    <view class="weui-cells weui-cells_after-title">
+            
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-label">qq</view>
+              <input class="weui-input" placeholder="请输入qq"/>
+            </view>
+            
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+              <view class="weui-label">手机号</view>
+              <input class="weui-input" placeholder="请输入手机号" />
+              <view class="weui-cell__ft">
+                    <view class="weui-vcode-btn">获取验证码</view>
+              </view>
+            </view>
+            
+            <!-------------------------------
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">验证码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入验证码" />
+                </view>
+                <view class="weui-cell__ft">
+                    <image class="weui-vcode-img" src="../manage/vcode.jpg" style="width: 108px"></image>
+                </view>
+            </view>    
+    </view>
+    !------------------------------->
+
+      <!------------------------------->
+      <view class="weui-progress">
+        <view class="weui-progress__bar">
+          <progress percent="{{progress}}" stroke-width="3" />
+        </view>
+        <view class="weui-progress__opr">
+          <icon type="cancel" size="22"></icon>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button form-type="submit" type="primary" disabled="{{disable}}">{{uploadlottery}}</button>
+        <text>\n</text>
+        <button form-type="reset" type="primary">重置表单</button>
+      </view>
+    </form>
+    <!--
+    <view class="weui-cells__title">活动分享二维码(成功上传后自动生成,点击放大，长按保存)：</view>
+    <view class="qpiccon">
+      <image class='qrpic' src='{{qrurl}}' bindtap='previewqr'></image>
+    </view>
+    -->
+  </view>
+</view>

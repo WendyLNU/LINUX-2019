@@ -1,0 +1,5 @@
+/* pages/index/other.wxss */
+.title{
+text-align: center;
+font-weight: bold
+}

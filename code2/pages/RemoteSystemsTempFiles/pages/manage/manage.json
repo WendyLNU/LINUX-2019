@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "backgroundColor": "#ffffff",
+  "navigationBarBackgroundColor": "#ff0000",
+  "navigationBarTitleText": "发起抽奖",
+  "navigationBarTextStyle": "white"
+}

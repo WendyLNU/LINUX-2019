@@ -1,0 +1,150 @@
+<!--声明页面开始-->
+<view wx:if="{{pagenow=='shengming'}}">
+  <view>
+    <text selectable="true">
+    亲爱的用户朋友，欢迎使用乐抽抽奖小程序！本页面包含用户协议和隐私政策，强烈建议您花几分钟时间浏览本页面。\n
+    </text>
+    <view class='title'>
+      <text selectable="true">《乐抽小程序用户协议》\n</text>
+    </view>
+    <text selectable="true">
+    一、乐抽团队的责任
+    1. 乐抽抽奖小程序（以下简称“本产品”）由乐抽团队（以下简称“团队”或“我们”）开发运营，团队确保小程序和服务器正常运行；如您发现产品漏洞或建议请及时与团队联系，可关注公众号“乐抽Lucky”直接回复，团队会在24小时内作出答复；
+    2. 由于团队成员均为学生，我们无法保证永久运营维护本产品，但我们保证出现重大问题时会至少提前一个月发出通知，并保证在产品生命周期内，公众号会24小时内对您的消息做出答复；
+    3. 团队保证及时清理垃圾和违规的抽奖活动内容；但限于我们精力有限，若您有发现此类活动，请及时与团队联系，公众号回复即可；
+    4. 团队确保抽奖算法的公平性，我们不设后门、作弊等操作；
+    5. 团队确保您的微信公开信息和ID不被泄露，亦不会用作除乐抽抽奖业务之外的其他任何用途。
+
+    二、您的责任
+    1. 请不要发布暴恐、涉黄、涉政、恶意攻击他人、展示他人隐私等违反法律、规定和道德的行为，一经发现，乐抽团队有权利禁止您使用乐抽抽奖的一系列产品；
+    2. 产品运营不易，且免费使用；所以请您不要恶意攻击、破坏本产品及团队的服务器；
+    3. 请您发布抽奖活动时确认此抽奖真实有效，请不要随意发布虚假信息。
+
+    ——乐抽抽奖团队，2019年4月11日
+
+    </text>
+    <view class='title'>
+      <text selectable="true">《乐抽小程序隐私政策》\n</text>
+    </view>
+    <text selectable="true">
+    1. 乐抽小程序（以下简称“本产品”）会获取您的微信公开信息（昵称、头像等）及唯一ID（openid）；
+    2. 本产品不会向第三方泄露您的唯一ID，亦不会用作除乐抽抽奖业务之外的其他任何用途；
+    3. 当您中奖后若需要邮寄等服务时，可能需要您提供电话号码和地址，这些数据将会得到完善保存，且当本产品确定活动发起者已经邮寄后，将会删除这些数据；
+    4. 您发起或参与的活动信息由于需要向您展示，这些数据会长期存在于系统数据库中；
+    5. 当您发起抽奖时尽量不要使用带有个人隐私的文字或图片，若您误填了隐私信息，可第一时间在“乐抽Lucky”公众号内告知我们，乐抽团队会尽快核实并删除这些数据。
+
+    ——乐抽抽奖团队，2019年4月11日
+
+    </text>
+  </view>
+</view>
+<!--声明页面结束-->
+
+<!--心愿页面开始-->
+<view wx:if="{{pagenow=='xinyuan'}}">
+  <text>请在这里写下你的想要的奖品关键词，当我们的奖品库里有了最佳匹配项，会第一时间通知你。\n\n</text>
+  <form bindsubmit="postit" report-submit="true">
+    <textarea type='text' name="xinyuan" style='width:745rpx;border:1px solid black;' placeholder='输入关键词，多个可空格分隔'></textarea>
+    <text>\n</text>
+    <button type='primary' form-type="submit" disabled='{{havepost}}'>{{buttontext}}</button>
+  </form>
+</view>
+<!--心愿页面结束-->
+
+<!--签到页面开始-->
+<view wx:if="{{pagenow=='qiandao'}}">
+  <text>\n注意：每次签到获取乐币后再过一天才能签到哦\n\n</text>
+  <button bindtap='qiandaonow' type='primary' disabled='{{ifqiandao}}'>{{qiandaoyu}}</button>
+</view>
+<!--签到页面结束-->
+
+<!--服务页面开始-->
+<view wx:if="{{pagenow=='fuwu'}}">
+  <view class='fuwu'>
+    <text selectable="true">
+      乐抽抽奖是一个产品系列，小程序是产品矩阵中重要的一员，主要负责线上；此外，乐抽抽奖团队还开发了适用于线下晚会抽奖和在线网页版的抽奖工具，产品简介如下：
+
+    </text>
+    <text class='title'>一、晚会抽奖离线版</text>
+    <text>
+      晚会抽奖离线版是一款适用于公司年会、班级活动等场合的抽奖工具，该工具完全离线且无需安装，完全免费且没有任何广告，下载即可使用。
+
+      支持功能：
+      1. 后台管理可以Excel表格、二维码扫码、手工填写等多种方式导入；
+      2. 前台抽奖页面支持换背景、换音乐、换抽奖方式、选择一次抽出人数等自定义功能；
+      3. 后台管理可以实时监控抽奖情况并更改每个人的抽奖概率，也可以自动修改概率；
+      4. 支持中奖名单显示、打印、保存，中奖显示页面自定义设置；
+      5. 支持同屏多个号码(文字)滚动抽取，可自定义每次同时出奖人数(同时出奖人数任意个，同时滚动人数任意个)；
+      6. 支持随时增加抽奖名单，支持抽奖名单一键打乱；
+      7. 支持界面改变后自动保存功能，断电时数据不会丢失；
+       </text>
+    <view style='width:750rpx'>
+      <image style='width:100%' src='https://lottery.glede.top/images/local.png' mode='widthFix' bindtap='previewimg1'></image>
+    </view>
+    <view style='width:750rpx'>
+      <image style='width:100%' src='https://lottery.glede.top/images/front.jpg' mode='widthFix' bindtap='previewimg2'></image>
+    </view>
+    <text>  
+    下载地址：https://lottery.glede.top (长按可复制)
+    </text>
+    <text class='title'>二、晚会抽奖在线版</text>
+    <text>
+      晚会抽奖在线版是在离线版基础上添加了在线网页操作方式，可以大家扫描大屏幕上二维码后一起参与抽奖。产品完全免费且无广告。
+      </text>
+    <view style='width:750rpx'>
+      <image style='width:100%' src='https://lottery.glede.top/images/manage.png' mode='widthFix' bindtap='previewimg3'></image>
+    </view>
+    <view style='width:750rpx'>
+      <image style='width:100%' src='https://lottery.glede.top/images/show.png' mode='widthFix' bindtap='previewimg4'></image>
+    </view>
+    <text>
+      使用地址：
+      https://lottery.glede.top/html/manage.html (长按可复制，后台管理)
+      https://lottery.glede.top/html/index.html (长按可复制，前台抽奖)
+
+    </text>
+    <text class='title'>三、乐抽大数据体验中心</text>
+    <text>
+      乐抽大数据是借助于乐抽抽奖数据库的非隐私数据，进行整合和数据挖掘而退出的产品，依托AI算法，给您提出合理性建议。截图如下：</text>
+    <view style='width:750rpx'>
+      <image style='width:100%' src='https://lottery.glede.top/images/bigdata.png' mode='widthFix' bindtap='previewimg5'></image>
+    </view>
+
+    体验地址：http://andyqi2018.gitee.io/bigdata/index.html 体验账号：luckme 体验密码：test
+
+  </view>
+</view>
+<!--服务页面结束-->
+<!--关于页面开始-->
+<view wx:if="{{pagenow=='guanyu'}}">
+  <text>
+
+  乐抽抽奖是一款免费的抽奖工具，支持活动抽奖，年会抽奖，扫码抽奖及各类线上线下抽奖活动场景，更有每日福利为您精选众多门店抽奖免费参与。乐抽抽奖是由东大乐抽团队历经多次迭代精心打磨而成，功能丰富，性能稳定，公平公正，是您增添幸运成为锦鲤的不二之选。
+
+</text>
+</view>
+<!--关于页面结束-->
+<!--新手页面开始-->
+<view wx:if="{{pagenow=='xinshou'}}">
+  <text class='title'>欢迎！</text>
+  <text>
+  这里显示了如何使用本小程序（文末有福利哦）
+  1. 参与抽奖：您可以在首页的若干个抽奖活动中选择感兴趣的活动并点击参与抽奖，待开奖时小程序会通知您；
+  2. 发起抽奖：您可以在底部的“发布”里按照指引发起一次抽奖；
+  3. 查看信息：您可以在底部的“我的”里看到您参与、发布和中奖的抽奖活动；再次点击可进入活动详情；
+  4. 关于乐币：只有当您的乐币大于活动要求的乐币数目才能抽奖，抽奖会消耗乐币；您可以通过签到等活动来获取乐币；乐币仅仅用于参与抽奖，它不能充值，不能兑换真实货币，也不能赠送；
+  5. 关于隐私：小程序只会获取您的公开信息，不会获取您的私人信息，请放心使用。
+  </text>
+  <text>\n注意：新手任务每周可领取一次。\n\n</text>
+  <button bindtap='xinshounow' type='primary' disabled='{{ifxinshou}}'>{{xinshouyu}}</button>
+</view>
+<!--新手页面结束-->
+
+<!--中奖页面开始-->
+<view wx:if="{{pagenow=='zhongjiang'}}">
+  <text>恭喜您中奖！😄请按照通知领奖 Ｏ(≧▽≦)Ｏ \n</text>
+  <view style='width:750rpx'>
+    <image style='width:100%' src='https://lottery.glede.top/images/zhongjiang.jpg' mode='widthFix'></image>
+  </view>
+</view>
+<!--中奖页面结束-->

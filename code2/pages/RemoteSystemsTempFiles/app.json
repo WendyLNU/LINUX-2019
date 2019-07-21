@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/manage/manage",
+    "pages/me/me",
+    "pages/detail/detail",
+    "pages/index/other",
+    "pages/me/cj",
+    "pages/me/fb",
+    "pages/me/zj",
+    "pages/me/other"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐抽抽奖",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "抽奖",
+        "iconPath": "res/icon/lottery1.png",
+        "selectedIconPath": "res/icon/lottery2.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "发布",
+        "iconPath": "res/icon/manage1.png",
+        "selectedIconPath": "res/icon/manage2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "res/icon/me1.png",
+        "selectedIconPath": "res/icon/me2.png"
+      }
+    ]
+  }
+}
