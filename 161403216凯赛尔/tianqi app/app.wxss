@@ -1,0 +1,7 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  text-align:center; background:#f6f8f8; padding:20rpx;font-size:16px;
+} 
+.padb{padding-bottom: 15rpx;}
+
