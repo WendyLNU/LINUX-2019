@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>hoj</title>
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/local.css" rel="stylesheet">
+<script src="jquery-2.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/check.js"></script>
+</head>
+
+<body style="background-color:wheat">
+<div class="container">
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" >在线评测</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.jsp"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+            <li><a href="ProblemSet"><span class="glyphicon glyphicon-th-list"></span>题集</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-signal"></span>总榜</a></li>
+            <li><a href="contestlist.html"><span class="glyphicon glyphicon-flag"></span>比赛</a></li>
+            <li><a href="StatusList"><span class="glyphicon glyphicon-ok-circle"></span>判题队列</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+            &nbsp;&nbsp;&nbsp;
+        </ul>
+    </div>
+
+</nav>
+<div class="jumbotron" style="padding-top: 15px">
+    <div class="text-center" style="font-size: 25px">Ranklist Demo</div>
+    <div>
+            <!--start time & end time-->
+            <div class="col-md-6 text-left" style="padding: 5px">
+                <span class="text-mid-bold">Start</span>
+                <span id="start-time">2018-06-10 13:00:00</span>
+            </div>
+            <div class="col-md-6 text-right" style="padding: 5px">
+                <span class="text-mid-bold">End</span>
+                <span id="end-time">2018-06-10 17:00:00</span>
+            </div>
+            <div class="clearfix"></div>
+            <!--progress-->
+            <div class="progress" style="margin: 2px">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" 
+                       aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                     
+                    </div>
+            </div>
+            <!--time elapsed & contest status & time remaining-->
+            <div class="col-md-5 text-left" style="padding: 5px">
+                <span class="text-mid-bold ">Time Elapsed</span>
+                <span id="time-elapsed" >4:00:00</span>
+            </div>
+            <div id="contest-time-label" class="col-md-2 text-center" style="padding: 5px">
+                <span id="contest-status" class="text-mid-bold accept-text">Ended</span>
+            </div>
+            <div class="col-md-5 text-right" style="padding: 5px">
+                <span class="text-mid-bold ">Time Remaining</span>
+                <span id="time-remaining" >0:00:00</span>
+            </div>
+            <div class="clearfix"></div>
+            <!--pending timer-->
+            <div id="contest-pending-timer" class="col-md-12 text-center" style="display: none;"></div>
+    </div>
+    <div style="display: block;padding: 2px">
+        <div style="display: inline-block;padding: 5px">
+            <span class="sample-result-color accepted"></span>
+            <span>Accepted</span>
+        </div>
+        <div style="display: inline-block;padding: 5px">
+            <span class="sample-result-color fb"></span>
+            <span>FirstBlood</span>
+        </div>
+        <div style="display: inline-block;padding: 5px">
+            <span class="sample-result-color rejected"></span>
+            <span>Rejected</span>
+        </div>
+    </div>
+    <table class="table table-bordered" >
+        <thead>
+            <tr>
+            <th width="60px" style="text-align: center">Rank</th>
+            <th width="150px">Nickname</th>
+            <th width="60px" style="text-align: center">Solved</th>
+            <th width="80px" style="text-align: center">Time</th>
+            <th width="80px" style="text-align: center;font-size: 15px">A&nbsp;<div class="circle" style="background-color: red;"></div></th>
+            <th width="80px" style="text-align: center;font-size: 15px">B&nbsp;<div class="circle" style="background-color:purple;"></div></th>
+            <th width="80px" style="text-align: center;font-size: 15px">C&nbsp;<div class="circle" style="background-color:green"></div></th>
+            <th width="80px" style="text-align: center;font-size: 15px">D&nbsp;<div class="circle" style="background-color:yellow;"></div></th>
+            <th width="80px" style="text-align: center;font-size: 15px">E&nbsp;<div class="circle" style="background-color:blue;"></div></th>
+            <th width="80px" style="text-align: center;font-size: 15px">F&nbsp;<div class="circle" style="background-color:orange;"></div></th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center">
+        <tr>
+            <td>1</td>
+            <td style="text-align: left">houzena</td>
+            <td>5</td>
+            <td>1:20</td>
+            <td class="accepted">00:21</td>
+            <td class="rejected">-1</td>
+            <td class="accepted">00:21</td>
+            <td class="accepted">00:21</td>
+            <td class="fb">00:21</td>
+            <td class="accepted">00:21</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<center>
+<div id="footer" class="center">
+    CopyRight by <a href="#">houzena</a> 2018
+</div>
+</center>
+</div>
+</body>
+</html>

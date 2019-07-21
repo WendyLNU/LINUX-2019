@@ -1,0 +1,50 @@
+.sample-result-color {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.accepted {
+    color: rgb(51, 51, 51);
+    background: rgb(153, 255, 153);
+}
+.fb {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 153, 0);
+}
+.rejected {
+    background: rgb(255, 153, 153);
+}
+.circle {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+}
+.page_content{
+    border-top:1px solid;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Times New Roman;
+}
+pre {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #555;
+    border: 1px solid #dedede;
+    border-radius: 0;
+}
+

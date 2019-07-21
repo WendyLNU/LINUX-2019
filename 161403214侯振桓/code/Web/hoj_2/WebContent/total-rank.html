@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>hoj</title>
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="jquery-2.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/check.js"></script>
+</head>
+
+<body style="background-color:wheat">
+<div class="container">
+<!-- 登录模态框（Modal） -->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" 
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+                 <button type="button" class="close" 
+                    data-dismiss="modal" aria-hidden="true">
+                       &times;            </button>
+                 <h4 class="modal-title" id="myModalLabel">
+                    Welcome!           </h4>
+              </div>
+              <form class="form-horizontal" role="form" method="POST" id="loginform" action="success.html" onsubmit="return loginsubmit();">
+              <div class="modal-body">
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-6">
+                               <input type="text" class="form-control" name="username" id="login_name">
+                            </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-6">
+                               <input type="password" class="form-control" name="userpassword" id="passwd0">
+                            </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-6">
+                               <div class="checkbox">
+                                  <label>
+                                     <input type="checkbox"> 请记住我  </label>
+                               </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-offset-2 "  id="div_login_check"></div>
+                    
+              </div>
+              <div class="modal-footer">
+                 <input type="button" class="btn btn-default" 
+                    data-dismiss="modal" value="关闭"></input>
+                 <input type="submit" class="btn btn-primary" value="登录"></input>
+              </div>
+              </form> 
+        </div>
+           <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+
+<!-- 注册模态框（Modal） -->
+<div class="modal fade" id="SignModal" tabindex="-1" role="dialog" 
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+                 <button type="button" class="close" 
+                    data-dismiss="modal" aria-hidden="true">
+                       &times;            </button>
+                 <h4 class="modal-title" id="myModalLabel">
+                    Welcome!           </h4>
+              </div>
+              <form class="form-horizontal" role="form" method="POST" id="signform" action="success.html"  onsubmit="return signsubmit();">
+              <div class="modal-body">
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-6">
+                               <input type="text" class="form-control" name="username" placeholder="*" id="sign_name">
+                            </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">昵称</label>
+                            <div class="col-sm-6">
+                               <input type="text" class="form-control" name="nickname"  placeholder="*" id="sign_nickname">
+                            </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-6">
+                               <input type="password" class="form-control" name="userpassword1" id="passwd1">
+                            </div>
+                            
+                    </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">再次输入</label>
+                            <div class="col-sm-6">
+                               <input type="password" class="form-control" name="userpassword2" id="passwd2" onblur="checkRePasswd()">
+                            </div>
+                            <span  id="span_repasswd"></span>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">学校</label>
+                            <div class="col-sm-6">
+                               <input type="text" class="form-control" name="school">
+                            </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">邮箱</label>
+                            <div class="col-sm-6">
+                               <input type="text" class="form-control" name="email" placeholder="*">
+                            </div>
+                    </div>
+                    <div class="col-sm-offset-2 "  id="div_sign_check"></div>             
+              </div>
+              <div class="modal-footer">
+                 <input type="button" class="btn btn-default" 
+                    data-dismiss="modal" value="关闭"></input>
+                 <input type="submit" class="btn btn-primary" value="注册"></input>
+              </div>
+              </form> 
+        </div>
+           <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" >在线评测</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+            <li><a href="problemset.html"><span class="glyphicon glyphicon-th-list"></span>题集</a></li>
+            <li><a href="total-rank.html"><span class="glyphicon glyphicon-signal"></span>总榜</a></li>
+            <li><a href="contestlist.html"><span class="glyphicon glyphicon-flag"></span>比赛</a></li>
+            <li><a href="status.html"><span class="glyphicon glyphicon-ok-circle"></span>判题队列</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#LoginModal" data-toggle="modal">登录</a></li>
+            <li><a href="#SignModal" data-toggle="modal">注册</a></li>
+            &nbsp;&nbsp;&nbsp;
+        </ul>
+    </div>
+
+</nav>
+<div class="jumbotron" style="background-color: snow">
+<center>
+    <h3>全站排行榜</h3>
+</center>
+<table class="table table-hover">
+<thead>
+    <th width="80">名次</th>
+    <th class="header">昵称</th>
+    <th width="100">正确</th>
+    <th width="100">提交</th>
+    <th width="100">%AC</th>
+</thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>houzena</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>houzena2</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        </tr>
+</tbody>
+</table>
+<center>
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+        </center>
+</div>
+<center>
+<div id="footer" class="center">
+    CopyRight by <a href="#">houzena</a> 2018
+</div>
+</center>
+</div>
+</body>
+</html>
