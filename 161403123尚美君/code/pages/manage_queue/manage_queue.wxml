@@ -1,0 +1,53 @@
+<view class='manage-content'>
+  <view class='list-header'>
+    当前位置 :
+    <text class="now">{{path.length==0?'根目录':path[path.length-1].name}}</text>
+    <view class='text-right' bindtap='goBack' wx:if="{{path.length>0}}">
+      返回上一层
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='list'>
+    <view class='item' bindtap='tapItem' data-index='{{i}}' wx:for="{{list}}" wx:for-item="x" wx:for-index="i" wx:key="id">
+      <view class='item-icon'>
+        <image src='/img/icon/queue-icon1.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>{{x.name}}</text>
+        <text class="info">自定义回顾队列</text>
+      </view>
+      <view class='item-button-box' data-index="{{i}}" catchtap='tapItemButton'>
+        <view class="item-button  {{options.type=='select'?'item-selector':''}}">
+          <image src='/img/icon/queue-icon2.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+    <view class='plus-sign' wx:if="{{options.usedTo == 'insertToQueue'}}" bindtap='create'>
+      创建一个回顾队列
+    </view>
+    <view class='item' bindtap='tapMemory' data-index='{{i}}' wx:for="{{list2}}" wx:for-item="x" wx:for-index="i" wx:key="id">
+      <view class='item-icon'>
+        <image src='/img/icon/memory-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>{{x.title}}</text>
+        <text class="info">上次回顾时间：{{x.masteredTime!=null?x.masteredTime:'尚未回顾'}}</text>
+      </view>
+      <view class='item-button-box' data-index="{{i}}" catchtap='tapMemoryButton'>
+        <view class="item-button  {{options.type=='select'?'item-selector':''}}">
+          <image src='/img/icon/queue-icon2.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="{{confirm.disable?'confirm disable':'confirm'}}" wx:if="{{options.type=='select'}}" catchtap='confirm'>
+  确定
+</view>
+<view class="plus" wx:else catchtap='openBottomSheet'>
+  <view class='row'></view>
+  <view class='column'></view>
+</view>
+
+<modal-custom type="{{modalObject.type}}" title="{{modalObject.title}}" content="{{modalObject.content}}" button="{{modalObject.button}}" bindconfirm="{{modalObject.bindconfirm}}" placeholder="{{modalObject.placeholder}}"></modal-custom>

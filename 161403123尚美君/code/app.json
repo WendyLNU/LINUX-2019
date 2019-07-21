@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/canvas/canvas",
+    "pages/note_mode/note_mode",
+    "pages/shared_history/shared_history",
+    "pages/review_history/review_history",
+    "pages/message/message",
+    "pages/welcome/welcome",
+    "pages/manage_queue/manage_queue",
+    "pages/me/me",
+    "pages/add_memory/add_memory",
+    "pages/review_system/review_system",
+    "pages/search/search",
+    "pages/manage_select_view/manage_select_view",
+    "pages/library/library",
+    "pages/start_review/start_review",
+    "pages/edit_memory/edit_memory",
+    "pages/correct/correct",
+    "pages/more/more",
+    "pages/market/market",
+    "pages/product/product",
+    "pages/my_order/my_order",
+    "pages/certify/certify",
+    "pages/add_memories/add_memories",
+    "pages/view_memory/view_memory"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2fa0ff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "记忆仓库",
+    "backgroundColor": "#2fa0ff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#43baff",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "img/icon/home.png",
+        "selectedIconPath": "img/icon/home-active.png"
+      },
+      {
+        "pagePath": "pages/library/library",
+        "text": "记忆库",
+        "iconPath": "img/icon/library.png",
+        "selectedIconPath": "img/icon/library-active.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "发现",
+        "iconPath": "img/icon/more.png",
+        "selectedIconPath": "img/icon/more-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "img/icon/me.png",
+        "selectedIconPath": "img/icon/me-active.png"
+      }
+    ]
+  }
+}

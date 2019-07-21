@@ -1,0 +1,119 @@
+.index-body,index-start{
+  position: relative;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 180rpx;
+  border-radius: 50%;
+  width: 300rpx;
+  height: 300rpx;
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
+.index-masterInfo{
+  width: 100%;
+}
+
+
+
+
+.index-start-inner{
+  position: absolute;
+  z-index: 2;
+  top: 40rpx;
+  left: 40rpx;
+  border-radius: 50%;
+  width: 220rpx;
+  height: 220rpx;
+  background: -webkit-linear-gradient(135deg, #a3ddff, #33b3fe);
+  background: -moz-linear-gradient(135deg, #a3ddff, #33b3fe);
+  background: -o-linear-gradient(135deg, #a3ddff, #33b3fe);
+  background: linear-gradient(135deg, #a3ddff, #33b3fe);
+}
+
+.index-start-shadow{
+  position: absolute;
+  z-index: 1;
+  top: 80rpx;
+  left: 120rpx;
+  width: 220rpx;
+  border-radius: 10%;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  height: 300rpx;
+  background: #dadada;
+}
+
+.index-start-text{
+  position: absolute;
+  z-index: 2;
+  top: 88rpx;
+  left: 82rpx;
+  width: 140rpx;
+  height: 140rpx;
+  line-height: 60rpx;
+  color: #fff;
+  font-size: 48rpx;
+  letter-spacing: 10rpx;
+}
+.index-start-text text{
+  text-align: center;
+  display: block
+}
+.Info{
+  float: left;
+  width: 49%;
+}
+
+.info-title{
+  font-size: 36rpx;
+  color: #43baff;
+  text-align: center;
+}
+
+.info-content{
+  margin-top: 10px;
+  font-size: 56rpx;
+  color: #43baff;
+  text-align: center;
+  font-weight: 800;
+}
+
+.separator{
+  float: left;
+  width: 1%;
+  line-height: 110rpx;
+  color: #43baff;
+  font-size: 48rpx;
+  text-align: center;
+}
+
+.index-addMemory{
+
+  height: 220rpx;
+  border-top-right-radius: 40rpx;
+   border-top-left-radius: 40rpx;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  padding-top: 30px;
+  background: #43baff;
+}
+.add-button{
+  font-size: 18px;
+  border: #ffffff 2rpx solid;
+  background-color: transparent;
+  border-radius: 30px;
+  color: white;
+  display: block;
+  width: 150px;
+}
+
+.index-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  height: 100vh;
+
+
+}

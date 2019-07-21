@@ -1,0 +1,46 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: #f5f5f5;
+  padding-top: 30rpx;
+  min-height: 100vh;
+  padding-bottom: 150rpx;
+}
+.canvas{
+  position: absolute;
+}
+
+
+.footer{
+  margin-top:930rpx;
+  height: 110rpx;
+  display:flex;
+  justify-content:space-around;
+}
+
+.footer .item{
+  width: 120rpx;
+  height: 110rpx;
+}
+.footer .img{
+  display: block;
+  margin: auto;
+  height: 64rpx;
+  width: 64rpx;
+}
+.footer .info{
+  text-align: center;
+  color: #aaa;
+  font-size: 24rpx;
+}
+
+.version{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 24rpx;
+  bottom: 100rpx;
+  color: #bbb;
+}

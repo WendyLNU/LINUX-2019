@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "search-header": "/Components/search-header/search-header"
+  }
+}

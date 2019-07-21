@@ -1,0 +1,54 @@
+<!--批量录入记忆-->
+<view class='background-color'>
+  <view class='page-container'>
+    <view class='header'>
+      <view class='item' bindtap='generate'>
+        <image class='img' src='/img/icon/shencheng.png'></image>
+        <view class='info'>
+          生成记忆
+        </view>
+      </view>
+       <view class='item' bindtap='save'>
+        <image class='img' src='/img/icon/save.png'></image>
+        <view class='info'>
+          临时保存
+        </view>
+      </view>
+      <view class='item' bindtap='clearText'>
+        <image class='img' src='/img/icon/shuazi.png'></image>
+        <view class='info'>
+          清空内容
+        </view>
+      </view>
+      <view class='item' bindtap='formClipboard'>
+        <image class='img' src='/img/icon/jianqie.png'></image>
+        <view class='info'>
+          剪切板导入
+        </view>
+      </view>
+      <view class='item' bindtap='toClipboard'>
+        <image class='img' src='/img/icon/copy.png'></image>
+        <view class='info'>
+          复制内容
+        </view>
+      </view>
+      <view class='item' bindtap='help'>
+        <image class='img' src='/img/icon/help.png'></image>
+        <view class='info'>
+          查看帮助
+        </view>
+      </view>
+    </view>
+    <textarea maxlength="-1" auto-focus="{{true}}" cursor-spacing='60' value='{{value}}' class='' bindinput='input' placeholder="请在这里输入点什么..." />
+    <view class='target'>
+      <view class='text-left'>
+        生成的记忆将存入：
+      </view>
+      <view class='library-name'>
+        {{saveTo.name}}
+      </view>
+    </view>
+  </view>
+
+  <view class='version'>批量录入模式v1</view>
+</view>

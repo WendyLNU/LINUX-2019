@@ -1,0 +1,23 @@
+<!--pages/view_note/view_note.wxml-->
+<view class='content'>
+ <view class='list-header' wx:if="{{memory!=null}}">
+    存储位置：
+    <text class="now">{{memory.pathName}}</text>
+    <view class='text-right'  bindtap='changeStatus'>
+      更多操作
+    </view>
+    <view class='hr'></view>
+  </view>
+  <view class="clue">
+    {{memory.title}}
+  </view>
+  <view class='paragraph' wx:for="{{memory.paragraph}}" wx:for-item="x" wx:for-index="i" wx:key="positon">
+    <view class='{{x.isTitle?className.title:className.body}}'>
+      <image  src="/img/loading.gif" mode="widthFix" hidden='{{x.isImg?false:true}}' wx:if="{{!loadStatus[i]}}"></image>
+      <image id="{{i}}" data-src="{{x.imgSrc}}" src='{{x.imgSrc}}' mode="widthFix" style='{{!loadStatus[i]?"height:0;widht:0":""}}' bindload="loadFinish" hidden='{{x.isImg?false:true}}' bindtap='previewImage'></image>
+      
+      <text selectable="{{true}}" space="nbsp" sid="{{i}}" name="textarea{{i}}" class="{{(x.isImg||x.isTitle)?className.hidden:className.show}}">{{x.content}}</text>
+      <text selectable="{{true}}" space="nbsp" name="title{{i}}" id="{{i}}" class="{{x.isTitle?className.show:className.hidden}}">{{x.content}}</text>
+    </view>
+  </view>
+</view>

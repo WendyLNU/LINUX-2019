@@ -1,0 +1,37 @@
+<view class="product-page">
+  <view class="row">
+    <view class='sgin'></view>
+    <view class="left">纠错的产品</view>
+  </view>
+  <view class="list">
+    <view class='item' bindtap='checkProduct'>
+      <view class='item-icon'>
+        <image src='/img/icon/library-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>Linux常用命令</text>
+        <text class="info">作者：Jack</text>
+      </view>
+    </view>
+    <view class="info">
+    </view>
+  </view>
+
+
+  <view class="row">
+    <view class='sgin'></view>
+    <view class="left">错误简述</view>
+  </view>
+  <view class='brief '>
+    <view class="weui-cells weui-cells_after-title" style='font-size:32rpx;'>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="错误简述将帮助我们定位错误" style="height: 6.3em" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" style='font-size:32rpx;' type="primary" bindtap="tap">提交</button>
+  </view>
+</view>

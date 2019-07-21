@@ -1,0 +1,18 @@
+<view class='layout {{type}}' catchtap='cancel'>
+  <view class='window-primary' catchtap='catch'>
+    <view class='window-title'>
+      分享成功
+    </view>
+    <view class='window-content'>
+      分享码为：{{content}}
+    </view>
+    <view class='window-buttons'>
+      <view class='button-yes' catchtap='confirm'>
+        复制分享码
+      </view>
+      <view class='button-no' catchtap='cancel'>
+        取消
+      </view>
+    </view>
+  </view>
+</view>

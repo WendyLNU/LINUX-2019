@@ -1,0 +1,2 @@
+<!--pages/welcome/welcome.wxml-->
+<image src='/img/bg/bg-start.jpg' style='width:100%;height:100vh'></image>

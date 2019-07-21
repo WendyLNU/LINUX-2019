@@ -1,0 +1,21 @@
+<view class="market-page">
+  <view class="row">
+    <view class='sgin'></view>
+    <view class="left">产品列表</view>
+  </view>
+  <view class="list">
+    <view class='item' bindtap='checkProduct'>
+      <view class='item-icon'>
+        <image src='/img/icon/library-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>Linux常用命令</text>
+        <text class="info">作者：Jack</text>
+      </view>
+      <view class='item-button'>
+        H O T
+      </view>
+    </view>
+    <view class="no-more">- 没有更多产品了 -</view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+@import "/common/wxss/list.wxss";
+.bg-color{
+  background-color: #f5f5f5;
+}
+page,
+.page,
+.page__bd{
+    height: 100%;
+    background: #eee;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding: 30rpx;
+    padding-top: 10rpx;
+}
+.weui-tab__content .item-button-text{
+  width: 200rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 25rpx;
+  font-size:24rpx;
+  text-align: right;
+  color:#ccc;
+
+  right: 20px;
+}

@@ -1,0 +1,2 @@
+<image src="/img/loading.gif" style="width:150rpx;" mode="widthFix" bindload="loadFinish"></image>
+<image src="/img/loading.gif" style="width:150rpx;" mode="widthFix" bindload="loadFinish"></image>

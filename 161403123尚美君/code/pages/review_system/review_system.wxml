@@ -1,0 +1,46 @@
+<search-header></search-header>
+<view class='container'>
+  <view class='list-header'>
+    存储位置：
+    <text class="now" wx:if="{{shared!=1}}">{{memory.pathName}}</text>
+    <text class="now" wx:else>好友分享</text>
+    <view class='text-right' wx:if="{{status==1||status==2}}" bindtap='changeStatus'>
+      更多操作
+    </view>
+    <view class='hr'></view>
+    <text class="now">当前进度：{{current}}/{{total}} </text>
+    <text class="now" style='float:right;'> 未掌握：{{notMasteredList.length}}</text>
+  </view>
+
+  <view class="clue {{status==0?'padding-top':''}}" wx:if="{{status>=0}}">
+    {{memory.title}}
+  </view>
+  <view class="clue padding-top" wx:if="{{status==-1}}" style='color:red'>
+    该组已回顾完成
+  </view>
+  <view class="status" wx:if="{{status==2}}">未掌握</view>
+  <view wx:if="{{status==1||status==2}}">
+    <view class='paragraph' wx:for="{{memory.paragraph}}" wx:for-item="x" wx:for-index="i" wx:key="index">
+      <view class='{{x.isTitle?className.title:className.body}}'>
+        <image src="/img/loading.gif" mode="widthFix" hidden='{{x.isImg?false:true}}' wx:if="{{!loadStatus[i]}}"></image>
+        <image id="{{i}}" data-src="{{x.imgSrc}}" src='{{x.imgSrc}}' mode="widthFix" style='{{!loadStatus[i]?"height:0;widht:0":""}}' bindload="loadFinish" hidden='{{x.isImg?false:true}}' bindtap='previewImage'></image>
+        <text selectable="{{true}}" space="nbsp" sid="{{i}}" name="textarea{{i}}" class="{{(x.isImg||x.isTitle)?className.hidden:className.show}}">{{x.content}}</text>
+        <text selectable="{{true}}" space="nbsp" name="title{{i}}" id="{{i}}" class="{{x.isTitle?className.show:className.hidden}}">{{x.content}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="buttons" wx:if="{{status==0}}">
+    <view bindtap='mastered'>已掌握</view>
+    <view bindtap='notMastered'>未掌握</view>
+  </view>
+  <view class="next" wx:elif="{{status==-1}}">
+    <view bindtap='again'>再来一组</view>
+  </view>
+  <view class="next" wx:elif="{{status==-2}}">
+    <view bindtap='goback'>返回</view>
+  </view>
+
+  <view class="next" wx:else>
+    <view bindtap='next'>下一个</view>
+  </view>
+</view>

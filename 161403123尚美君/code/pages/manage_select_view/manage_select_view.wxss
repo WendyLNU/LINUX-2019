@@ -1,0 +1,47 @@
+@import "/common/wxss/list.wxss";
+
+.manage-content {
+  padding: 30rpx;
+  min-height: 100vh;
+  background: #eee;
+}
+
+.item-selector {
+  width: 28rpx;
+  height: 28rpx;
+  padding: 22rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 20px;
+}
+
+.item-selector view {
+  height: 100%;
+  width: 100%;
+  border: #bebebe 1px solid;
+}
+
+.item-selector image {
+  display: none;
+}
+
+.active {
+  background: #71ff71;
+}
+
+.library-plus-sign {
+  margin: 0 auto;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 0;
+  width: 120px;
+  height: 20px;
+  color: #ccc;
+  border-bottom: #ccc solid 1px;
+  background-color: transparent;
+  line-height: 30rpx;
+}

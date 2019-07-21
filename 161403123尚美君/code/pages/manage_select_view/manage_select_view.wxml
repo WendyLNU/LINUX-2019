@@ -1,0 +1,41 @@
+<view class='manage-content'>
+  <view class='list-header'>
+    当前位置 :
+    <text class="now">{{path.length==0?'根目录':path[path.length-1].name}}</text>
+    <view class='text-right' bindtap='goBack'>
+      返回上一层
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='list'>
+    <view class='item' bindtap='tapItem' data-index='{{i}}' wx:for="{{list}}" wx:for-item="x" wx:for-index="i" wx:key="id">
+      <view class='item-icon'>
+        <image src='/img/icon/library-icon.png' mode='widthFix'></image>
+      </view>
+      <view class='item-text'>
+        <text>{{x.name}}</text>
+        <text class="info">点击查看该记忆库</text>
+      </view>
+      <view class='item-button-box' data-index="{{i}}" catchtap='tapItemButton'>
+        <view class="item-button  {{options.type=='select'?'item-selector':''}}">
+          <view class="{{x.chosen?'active':''}}"></view>
+          <image src='/img/icon/queue-icon2.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+    <view class='library-plus-sign' wx:if="{{options.usedTo == 'saveMemory'}}" bindtap='create'>
+      创建一个记忆库
+    </view>
+    
+  </view>
+</view>
+
+<view class="{{confirm.disable?'confirm disable':'confirm'}}" wx:if="{{options.type=='select'}}" catchtap='confirm'>
+  确定
+</view>
+<view class="plus" wx:else>
+  <view class='row'></view>
+  <view class='column'></view>
+</view>
+
+<modal-custom type="{{modalObject.type}}" title="{{modalObject.title}}" content="{{modalObject.content}}" button="{{modalObject.button}}" bindconfirm="{{modalObject.bindconfirm}}" placeholder="{{modalObject.placeholder}}"></modal-custom>

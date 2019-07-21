@@ -1,0 +1,106 @@
+<view class='me-body'>
+  <view class='me-info'>
+    <view class='background'>
+    </view>
+    <view class='info-panel'>
+      <view class='portrait'>
+        <view class='head-photo'>
+          <open-data type="userAvatarUrl"></open-data>
+          
+        </view>
+      </view>
+      <view class='name' bindtap='apply'>
+        <open-data type="userNickName"></open-data><view class="right" >（未认证）</view>
+      </view>
+      <view class='options'>
+        <view class='top-option' bindtap='openTreasureBox'>
+          <image class='option-icon' src='../../img/icon/me-icon1.png'></image>
+          <view>
+            神秘宝箱
+          </view>
+        </view>
+        <view class='top-option' bindtap='gomanage_queue'>
+          <image class='option-icon' src='../../img/icon/me-icon2.png'></image>
+          <view>
+            回顾队列
+          </view>
+        </view>
+        <view class='top-option' bindtap='goShop'>
+          <image class='option-icon' src='../../img/icon/me-icon3.png'></image>
+          <view>
+            记忆商城
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='option-list'>
+    <view class='bottom-option'  bindtap='goMessage'>
+      <view class='icon-left'>
+        <image src='../../img/icon/me-option-icon1.png' class='optionlist-icon'></image>
+      </view>
+      <view class='text'>
+        消息
+      </view>
+      <view class='icon-right'>
+        <image src='../../img/icon/me-option-icon7.png' class='optionlist-icon'></image>
+      </view>
+    </view>
+
+    <view class='option-separator'>
+    </view>
+
+    <view class='bottom-option'>
+      <view class='icon-left'>
+        <image src='../../img/icon/me-option-icon2.png' class='optionlist-icon'></image>
+      </view>
+      <view class='text' style='color:#aaa'>
+        充值
+      </view>
+      <view class='icon-right'>
+        <image src='../../img/icon/me-option-icon7.png' class='optionlist-icon'></image>
+      </view>
+    </view>
+
+    <view class='bottom-option'>
+      <view class='icon-left'>
+        <image src='../../img/icon/me-option-icon3.png' class='optionlist-icon'></image>
+      </view>
+      <view class='text' style='color:#aaa'>
+        升级会员
+      </view>
+      <view class='icon-right'>
+        <image src='../../img/icon/me-option-icon7.png' class='optionlist-icon'></image>
+      </view>
+    </view>
+
+    <view class='bottom-option'catchtap='goMyOrder'>
+      <view class='icon-left' >
+        <image src='../../img/icon/me-option-icon4.png' class='optionlist-icon'></image>
+      </view>
+      <view class='text' >
+        我的分享
+      </view>
+      <view class='icon-right'>
+        <image src='../../img/icon/me-option-icon7.png' class='optionlist-icon'></image>
+      </view>
+    </view>
+
+    <view class='option-separator'>
+    </view>
+
+    <view class='bottom-option'>
+      <view class='icon-left'>
+        <image src='../../img/icon/me-option-icon5.png' class='optionlist-icon'></image>
+      </view>
+      <view class='text' bindtap='logout' style='color:#aaa'>
+        刷新登录信息
+      </view>
+      <view class='icon-right'>
+        <image src='../../img/icon/me-option-icon7.png' class='optionlist-icon'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<modal-custom type="{{modalObject.type}}" title="{{modalObject.title}}" content="{{modalObject.content}}" button="{{modalObject.button}}" bindconfirm="{{modalObject.bindconfirm}}" placeholder="{{modalObject.placeholder}}"></modal-custom>
