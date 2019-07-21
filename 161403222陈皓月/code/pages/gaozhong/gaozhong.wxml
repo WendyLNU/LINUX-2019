@@ -1,0 +1,55 @@
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/4.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：孙武\n\t性别：男\n\t年龄：23\n\t就读院校：沈阳大学\n\t所教科目：高中数学\n\t联系电话：18300235566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/5.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：郑海露\n\t性别：女\n\t年龄：19\n\t就读院校：东北大学\n\t所教科目：高中英语，物理\n\t联系电话：13955032276</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/12.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：孙小娟\n\t性别：女\n\t年龄：24\n\t就读院校：沈阳大学\n\t所教科目：高中地理数学\n\t联系电话：18300235566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/13.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：王海露\n\t性别：女\n\t年龄：19\n\t就读院校：东北大学\n\t所教科目：高中生物\n\t联系电话：15955032276</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/14.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：孙小武\n\t性别：男\n\t年龄：23\n\t就读院校：沈阳师范大学\n\t所教科目：高中数学\n\t联系电话：18300235566</text>
+</view>
+
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/15.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：郑海波\n\t性别：男\n\t年龄：19\n\t就读院校：东北大学\n\t所教科目：高中物理，化学\n\t联系电话：17955032276</text>
+</view>

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Me/Me",
+    "pages/teacher/teacher",
+    "pages/parent/parent",
+    "pages/detail/detail",
+    "pages/comment/comment",
+    "pages/xiaoxue/xiaoxue",
+    "pages/chuzhong/chuzhong",
+    "pages/gaozhong/gaozhong",
+    "pages/kaoyan/kaoyan",
+    "pages/liuxue/liuxue",
+    "pages/yishu/yishu",
+    "pages/dongda/dongda",
+    "pages/liaoda/liaoda"
+  ],
+  "tabBar": {
+    "selectedColor": "#1afa29",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/bar/index.png",
+        "selectedIconPath": "images/bar/index-selected.png"
+      },
+      {
+        "text": "我要找老师",
+        "pagePath": "pages/parent/parent",
+        "iconPath": "images/bar/find.png",
+        "selectedIconPath": "images/bar/find-selected.png"
+      },
+      {
+        "text": "我要当家教",
+        "pagePath": "pages/teacher/teacher",
+        "iconPath": "images/bar/teacher.png",
+        "selectedIconPath": "images/bar/teacher-selected.png"
+      }
+      
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#99CC33",
+    "navigationBarTextStyle": "black"
+  }
+}

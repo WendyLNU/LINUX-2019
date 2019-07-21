@@ -1,0 +1,12 @@
+<view class='background'>
+  <view class='teacher' wx:for="{{teacherList}}">
+    <image src='{{item.imagePath}}'></image>
+    <view class='teacher-details' style='background-color: #FFFFCC'>
+      <text>姓名：{{item.name}}</text>
+      <text>性别：{{item.sex}}</text>
+      <text>毕业院校：{{item.school}}</text>
+      <text>所在科目：{{item.subject}}</text>
+      <text>联系方式：{{item.relation}}</text>
+    </view>
+  </view>
+</view>

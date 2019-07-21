@@ -1,0 +1,38 @@
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/17.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：郑西楠\n\t性别：女\n\t年龄：25\n\t就读院校：东北大学\n\t所教科目：雅思\n\t联系电话：13225032276</text>
+</view>
+
+
+
+<view> 
+      <image class="tuxiang" src="/images/xiaoxue/7.jpg"></image>  
+</view>
+
+<view>
+      <text class='jianjie'>\t姓名：王东\n\t性别：男\n\t年龄：21\n\t就读院校：沈阳师范大学\n\t所教科目：托福\n\t联系电话：15977853566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/8.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：杨硕\n\t性别：女\n\t年龄：22\n\t就读院校：东北大学\n\t所教科目：托福\n\t联系电话：1363755566</text>
+</view>
+
+
+<view> 
+         <image class="tuxiang" src="/images/xiaoxue/10.jpg"></image>  
+</view>
+
+<view class='jianjie'>
+        <text text-align:right>\t姓名：孙萌萌\n\t性别：女\n\t年龄：23\n\t就读院校：沈阳理工大学\n\t所教科目：雅思\n\t联系电话：18935405566</text>
+</view>
+
+
+

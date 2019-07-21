@@ -1,0 +1,37 @@
+/* pages/parent/parent.wxss */
+.background{
+  background-color: #a7a4a3;
+}
+.teacher{
+  display: flex;
+  margin-bottom: 4rpx;
+  
+  background-color: #ffffff;
+ 
+}
+.teacher-details{
+  width: 550rpx;
+  display: flex;
+  flex-direction: column;
+}
+image{
+  width: 200rpx;
+  height: 250rpx;
+}
+.contaire{
+  display: flex;
+  flex-direction:column; 
+
+}
+.detail1 {
+  color: 	#606060;
+  margin: 20rpx 20rpx 0;
+  line-height: 44rpx;
+  letter-spacing: 1px;
+  font-family:Georgia, serif;
+  font-size:20px;
+  text-indent:30px;
+}
+.jianjie{
+  font-size:23px;
+}

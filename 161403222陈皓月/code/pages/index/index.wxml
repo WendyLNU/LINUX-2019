@@ -1,0 +1,75 @@
+<view>
+   
+      <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{ duration}}">
+          <block wx:for="{{imgUrls}}">
+              <swiper-item>
+                    <image src="{{item}}" class="swiper image" ></image>
+              </swiper-item>
+          </block>
+        </swiper>
+    
+      <view class='view2'>  
+
+    <view class='view2_1'><image src='/images/kemuxuanze.png' class='k'></image><text class='text1'>科目选择</text></view>
+
+    <view class='view2_2'>
+
+      <view class='view2_2_1'><image catchtap="onxiaoxue" src='/images/subject/primary.png' class='viewImages'></image><text class='text2'>小学</text></view>
+
+      <view class='view2_2_2'><image catchtap="onchuzhong"src='/images/subject/junior.png' class='viewImages'></image><text class='text2'>初中</text></view>
+
+      <view class='view2_2_3'><image catchtap="ongaozhong" src='/images/subject/senior.png' class='viewImages'></image><text class='text2'>高中</text></view>
+
+    </view>
+
+    <view class='view2_2'>
+
+      <view class='view2_2_1'><image catchtap="onkaoyan" src='/images/subject/college.png' class='viewImages'></image><text class='text2'>考研</text></view>
+
+      <view class='view2_2_2'><image catchtap="onliuxue" src='/images/subject/abroad.png' class='viewImages'></image><text class='text2'>留学</text></view>
+
+      <view class='view2_2_3'><image catchtap="onyishu" src='/images/subject/art.png' class='viewImages'></image><text class='text2'>艺术</text></view>
+
+    </view>  
+
+  </view>
+
+
+  
+<view class='view3_1'><image src='/images/university/mingshizaixiao.png' class='k'></image><text class='text1'>名师在校</text> 
+ 
+</view>
+
+
+      <view class=".Picture1"> 
+         <image catchtap="ondongda" class=".picture1" src="/images/university/dongda1.jpg"></image>
+      </view>
+      <view class=".Picture1"> 
+         <image catchtap="onliaoda" class=".picture1" src="/images/university/liaoda.jpg"></image>
+      </view>
+  
+         <view class='view3_1'><image src='/images/university/jiajiaotoutiao.png' class='k'></image><text class='text1'>家教头条</text>
+       
+         </view>  
+   
+<view>
+   <block wx:for="{{indexList}}"wx:for-item="item"wx:for-index="idx">
+   <view catchtap="onTapToDetail" data-index-id="{{item.indexId}}">
+    <view class="item" bindtap="seeDetail" id="0">
+      <view>
+        <image src="{{item.img}}" style="width:75px;height:58px;"></image>
+      </view> 
+      <view class="desc">
+        <view class="title">{{item.title}}</view>
+        <view class="count">
+        <view>{{item.zhuti}}</view>
+          <view class="liulan">{{item.liulan}}</view>
+          <view class="pinglun">{{item.pinglun}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="hr2"></view>
+    </view>
+    </block>
+ </view>
+</view>

@@ -1,0 +1,16 @@
+.tuxiang{
+  display:flex;
+   height: 435rpx;
+   width: 300rpx;
+  
+}
+.jianjie{
+ display:flex;
+ text-align:left;
+ line-height: 70rpx;
+ margin-bottom:2rpx;
+ margin-top:-430rpx;
+ margin-left:300rpx;
+ background-color: #FFFFCC;
+ border-style:solid none;
+}

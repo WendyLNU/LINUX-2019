@@ -1,0 +1,20 @@
+/* pages/parent/parent.wxss */
+.background{
+  background-color: #a7a4a3;
+}
+.teacher{
+  display: flex;
+  margin-bottom: 4rpx;
+  
+  background-color: #ffffff;
+ 
+}
+.teacher-details{
+  width: 550rpx;
+  display: flex;
+  flex-direction: column;
+}
+image{
+  width: 200rpx;
+  height: 250rpx;
+}
