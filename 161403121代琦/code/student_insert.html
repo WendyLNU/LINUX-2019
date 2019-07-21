@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生增加</title>
+</head>
+
+<body>
+<p align="left"><b>您当前的位置：</b>[学生管理]-[账号管理]-[增加新用户]</p>
+    <form action="student_insert.php"  method="GET">
+ <table border="1" align="center">
+    <tr>
+      <td>学号</td>
+      <td><input type="text" name="admin_id"></td>
+      <td>姓名</td>
+      <td><input type="text" name="admin_name"></td>
+    </tr>
+
+    <tr>
+      <td>密码</td>
+      <td><input type="password" name="admin_passwd"></td>
+      <td>确认密码</td>
+      <td><input type="password" name="admin_passwd1"></td>
+    </tr>
+    
+    <tr>
+    <td>性别</td>
+      <td><input type="radio" name="admin_sex" value="男" checked>男
+      <input type="radio" name="admin_sex" value="女">女</td>
+      <td>学院：</td>
+      <td><select name="admin_bumen"><option value="信息学院">信息学院</option><option value="数学院">数学院</option></td>
+    </tr>
+</table>
+
+<p align="center"><input name="submit" type="submit" value="确定">
+<input name="reset" type="reset" value="重置"></p>
+</form>
+
+</body>
+</html>

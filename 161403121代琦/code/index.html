@@ -1,0 +1,106 @@
+
+
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset='utf-8'" />
+
+<title>学生实验管理系统</title>
+<style type="text/css">  
+            #code  
+            {  
+                font-family:Arial;  
+                font-style:italic;  
+                font-weight:bold;  
+                border:0;  
+                letter-spacing:2px;  
+                color:blue;  
+            }  
+        </style>  
+<script language="javascript">
+
+	
+	var code ; //��ȫ�ֶ�����֤��   
+//������֤��  
+window.onload = function createCode(){  
+     code = "";   
+     var codeLength = 4;//��֤��ĳ���  
+     var checkCode = document.getElementById("code");   
+     var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',  
+     'S','T','U','V','W','X','Y','Z');//�����  
+     for(var i = 0; i < codeLength; i++) {//ѭ������  
+        var index = Math.floor(Math.random()*36);//ȡ���������������0~35��  
+        code += random[index];//��������ȡ��������ӵ�code��  
+    }  
+    checkCode.value = code;//��codeֵ������֤��  
+}  
+//У����֤��  
+function validate(){  
+	var a=form1.access.value;
+	var b=form1.pswd.value;
+    var inputCode = document.getElementById("input").value.toUpperCase(); //ȡ���������֤�벢ת��Ϊ��д        
+    if(inputCode.length <= 0||a==""||b=="") { //���������֤�볤��Ϊ0  
+        alert("请输入完整"); //�򵯳���������֤��  
+    }         
+    else if(inputCode != code ) { //���������֤�����������֤�벻һ��ʱ  
+        alert("验证码错误"); //�򵯳���֤���������  
+        createCode();//ˢ����֤��  
+        document.getElementById("input").value = "";//����ı���  
+    }         
+    else { //������ȷʱ  
+        form1.submit(); //����^-^  
+    }             
+}  
+</script>
+<style type="text/css">
+table {
+position: absolute; 
+margin:102;
+bottom:0
+}
+
+</style>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Georgia, Times New Roman, Times, serif;
+	color: #000000;
+	font-weight: bold;
+}
+body {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+-->
+</style>
+</head>
+<body background="image/1.jpg"  >
+<p align="right"><a href="login.html">教师入口</a></p>
+
+<form name="form1" method="post" action="stu_login.php" id="form1">
+<table width="97%" border="0" cellpadding="1" cellspacing="1" align="center" >
+<caption><h1 style="color:#FF0000" align="center">学生实验管理系统</h1></caption>
+
+<tr>
+<td width="42%" valign="top" align=right>学号</td>
+<td  width="12%"align="left" valign="middle" colspan="2" ><span  style="font-size:10pt">
+  <input name="access" id="access" style="border-right:#7994a0 1px solid;border-top:#7994a0 1px solid;background:#e1eaee;font:9pt arial; border-left:#7994a0 1px solid;width:100%;border-bottom:#7994a0 1px solid" size=7 type="text" /></span></td>
+<td width="35%"></td>
+</tr>
+<tr>
+<td valign="top" align=right>密码</td>
+<td align="letf" valign="middle" colspan="2" ><span syle="font-size:10pt"><input name="pswd" type="password" id="pswd" style="border-right:#7994a0 1px solid;border-top:#7994a0 1px solid;background:#e1eaee;font:9pt arial; border-left:#7994a0 1px solid;width:100%;border-bottom:#7994a0 1px solid" size=7 /></span></td>
+<td></td>
+</tr>
+<tr align="left">
+<td valign="top" align=right>验证码</td>
+<td><input type = "text" id = "input"style="border-right:#7994a0 1px solid;border-top:#7994a0 1px solid;background:#e1eaee;font:9pt arial; border-left:#7994a0 1px solid;width:100%;border-bottom:#7994a0 1px solid"/> </td><td> 
+            <input type = "button" id="code" onClick="createCode()" />  </td>
+           
+</tr>
+<tr align="center">
+<td align="right" valign="middle" colspan="2"><input  type="button" value="确认" onClick="validate()"  size="+6" ></td><td colspan="1"><input align="left" type="reset" value="重置"></td></tr>
+</table>
+</form>
+</body>
+</html>
