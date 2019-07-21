@@ -1,0 +1,16 @@
+[[source]]
+name = "qinghuayuan"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+requests = "*"
+pyqt5 = "*"
+pyqt5-tools = "*"
+image = "*"
+pyinstaller = "*"
+
+[requires]
+python_version = "3.6"
