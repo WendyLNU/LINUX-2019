@@ -1,0 +1,28 @@
+
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				position: relative;
+				
+				z-index: 2;
+				
+				opacity: 0.5;
+				filter: alpha(opacity=50);
+			}
+			.box2{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				/*开启绝对定位*/
+				position: absolute;
+				/*设置偏移量*/				
+				top: 100px;
+				left: 100px;
+
+				z-index: 25;
+				
+				opacity: 0.5;
+				filter: alpha(opacity=50);
+				
+			}
