@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  最小堆.cpp
+c:\users\ledig leo\documents\visual studio 2015\projects\最小堆\最小堆\最小堆.cpp(76): warning C4172: 返回局部变量或临时变量的地址: target
+  最小堆.vcxproj -> c:\users\ledig leo\documents\visual studio 2015\Projects\最小堆\Debug\最小堆.exe
+  最小堆.vcxproj -> c:\users\ledig leo\documents\visual studio 2015\Projects\最小堆\Debug\最小堆.pdb (Full PDB)
