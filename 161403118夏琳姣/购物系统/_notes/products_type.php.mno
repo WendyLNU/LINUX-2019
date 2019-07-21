@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ec_prodtype" value="name:type_id;datatype:int,name:type_name;datatype:string" />
+	<infoitem key="UD_ec_pd" value="name:type_id;datatype:int,name:prod_id;datatype:int,name:prod_name;datatype:string,name:prod_img;datatype:string,name:prod_price;datatype:int,name:prod_discount;datatype:int,name:prod_content;datatype:blob" />
+</info>
